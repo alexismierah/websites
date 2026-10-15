@@ -1,0 +1,6 @@
+allowBuilds:
+  msw: false
+  sharp: false
+  unrs-resolver: false
+minimumReleaseAgeExclude:
+  - nodemailer@10.1.1
