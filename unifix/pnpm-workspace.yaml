@@ -4,3 +4,5 @@ allowBuilds:
   unrs-resolver: false
 minimumReleaseAgeExclude:
   - nodemailer@10.1.1
+  - '@next/eslint-plugin-next@16.4.1'
+  - eslint-config-next@16.4.1
