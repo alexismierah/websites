@@ -108,7 +108,7 @@ export default function Header() {
             linear-gradient(#fff, #fff),
             repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(58,137,221,0.055) 39px, rgba(58,137,221,0.055) 40px),
             repeating-linear-gradient(0deg,  transparent, transparent 39px, rgba(58,137,221,0.055) 39px, rgba(58,137,221,0.055) 40px);
-          border-bottom: none;
+          border-bottom: 1px solid var(--border);
           transition: box-shadow 0.25s ease;
         }
         .hdr.scrolled { box-shadow: 0 8px 24px rgba(15,23,32,0.05); }
