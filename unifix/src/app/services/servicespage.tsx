@@ -158,7 +158,7 @@ export default function ServicesPage() {
         .sp-eyebrow-bar { width: 24px; height: 1.5px; background: var(--blue); }
         .sp-hero h1 {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(2.75rem, 5vw, 4.25rem);
+          font-size: clamp(2.5rem, 4.5vw, 3.75rem);
           font-weight: 400;
           line-height: 1.1;
           letter-spacing: -0.02em;
