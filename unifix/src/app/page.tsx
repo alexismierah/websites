@@ -101,54 +101,62 @@ export default function HomePage() {
 
         /* ── HERO ── */
         .hero {
-          position: relative; min-height: 100vh;
+          position: relative; min-height: 100vh; min-height: 100svh;
           display: flex; align-items: center; overflow: hidden;
         }
         .hero-bg {
           position: absolute; inset: 0;
           background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80');
           background-size: cover; background-position: center; z-index: 0;
+          transform: scale(1.02);
         }
         .hero-overlay {
           position: absolute; inset: 0;
-          background: linear-gradient(105deg, rgba(10,20,40,0.82) 0%, rgba(10,20,40,0.65) 50%, rgba(10,20,40,0.30) 100%);
+          background: linear-gradient(100deg, rgba(9,19,33,0.88) 0%, rgba(9,19,33,0.72) 47%, rgba(9,19,33,0.20) 100%);
           z-index: 1;
         }
         .hero-content {
           position: relative; z-index: 2;
-          max-width: none; margin: 0;
-          padding: 8rem var(--page-gutter) 6rem; width: 100%;
+          max-width: 1000px; margin: 0;
+          padding: 7rem var(--page-gutter) 6rem; width: 100%;
         }
         .hero h1 {
           font-family: var(--font);
-          font-size: clamp(2.1rem, 4vw, 3.2rem);
+          font-size: clamp(2.35rem, 4.2vw, 3.6rem);
           font-weight: 500;
-          line-height: 1.15;
+          line-height: 1.08;
           color: #fff;
-          max-width: 18ch;
-          margin-bottom: 1.5rem;
-          letter-spacing: -0.025em;
+          max-width: none;
+          margin-bottom: 1.25rem;
+          letter-spacing: 0;
         }
         .hero h1 em { font-style: italic; font-weight: 500; color: #93c5fd; }
+        .hero-title-line { white-space: nowrap; }
         .hero-sub {
-          font-size: 1rem;
+          font-size: 1.02rem;
           color: rgba(255,255,255,0.72);
-          max-width: 46ch;
-          line-height: 1.8;
-          margin-bottom: 2.75rem;
+          max-width: 54ch;
+          line-height: 1.75;
+          margin-bottom: 2rem;
           font-weight: 400;
         }
-        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
-        .btn-primary {
-          display: inline-block; background: var(--blue); color: #fff;
-          padding: 10px 28px;
-          border-radius: 9999px;
-          font-family: var(--font);
-          font-size: 0.875rem; font-weight: 600; text-decoration: none;
-          transition: background 0.2s, transform 0.15s;
+        .hero-actions {
+          display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;
+          transform: translateY(1.5rem);
         }
-        .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); }
-
+        .btn-primary, .btn-outline, .btn-ghost-white2 {
+          display: inline-flex; align-items: center; justify-content: center;
+          height: 44px; padding: 0 22px;
+          font-family: var(--font); font-size: 0.8125rem; font-weight: 600;
+          text-decoration: none;
+        }
+        .btn-primary {
+          background: var(--blue); color: #fff;
+          border-radius: 9999px;
+          transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+          box-shadow: 0 8px 24px rgba(20,91,163,0.25);
+        }
+        .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 12px 28px rgba(20,91,163,0.35); }
         /* ── STATS ── */
         .stats { background: #1e3a5f; padding: 0 var(--page-gutter); }
         .stats-inner {
@@ -189,21 +197,15 @@ export default function HomePage() {
         .about h2 em { font-style: italic; color: var(--blue); }
         .about p { font-size: 0.9rem; color: var(--ink-3); line-height: 1.85; font-weight: 400; margin-bottom: 1rem; }
         .btn-outline {
-          display: inline-block;
           margin-top: 0.75rem;
-          padding: 10px 24px;
           border: 1px solid var(--blue);
           background: var(--blue);
           border-radius: 9999px;
-          font-family: var(--font);
-          font-size: 0.8125rem;
-          font-weight: 600;
           color: #fff;
-          text-decoration: none;
           transition: border-color 0.2s, background 0.2s;
         }
         .btn-outline:hover { border-color: var(--blue-dark); color: #fff; background: var(--blue-dark); }
-        .about-image { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; }
+        .about-image { border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; }
         .about-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
         .about-image:hover img { transform: scale(1.03); }
 
@@ -221,7 +223,7 @@ export default function HomePage() {
         .services-head h2 em { font-style: italic; color: var(--blue); }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .svc-card {
-          background: var(--white); border: 1px solid var(--border); border-radius: 18px;
+          background: var(--white); border: 1px solid var(--border); border-radius: 8px;
           overflow: hidden; display: flex; flex-direction: column;
           transition: box-shadow 0.25s, transform 0.25s;
         }
@@ -312,24 +314,10 @@ export default function HomePage() {
         .cta-right { display: flex; flex-direction: column; gap: 1.25rem; align-items: flex-start; }
         .cta p { font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.8; font-weight: 400; }
         .cta-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-        .btn-white {
-          display: inline-block; background: #fff; color: var(--blue-dark);
-          padding: 14px 28px; border-radius: 8px;
-          font-family: var(--font);
-          font-size: 0.875rem; font-weight: 600; text-decoration: none;
-          transition: background 0.2s, transform 0.15s;
-        }
-        .btn-white:hover { background: #e8f2fc; transform: translateY(-1px); }
         .btn-ghost-white2 {
-          display: inline-block;
           border: 1px solid rgba(255,255,255,0.35);
           color: rgba(255,255,255,0.92);
-          padding: 10px 28px;
           border-radius: 9999px;
-          font-family: var(--font);
-          font-size: 0.875rem;
-          font-weight: 500;
-          text-decoration: none;
           transition: border-color 0.2s, background 0.2s;
         }
         .btn-ghost-white2:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.08); }
@@ -338,15 +326,28 @@ export default function HomePage() {
 
         @media (max-width: 900px) {
           .about-inner, .cta-inner { grid-template-columns: 1fr; gap: 3rem; }
-          .services-grid { grid-template-columns: 1fr; }
+          .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
           .stats-inner { grid-template-columns: 1fr; }
           .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); justify-content: flex-start; }
           .stat-item:last-child { border-bottom: none; }
           .services-head { flex-direction: column; align-items: flex-start; }
         }
+        @media (max-width: 600px) {
+          .hero-overlay { background: linear-gradient(90deg, rgba(9,19,33,0.88), rgba(9,19,33,0.54)); }
+          .root .hero-content { padding: 6rem 1.5rem 4rem; }
+          .hero h1 { font-size: clamp(1.35rem, 6.2vw, 2.35rem); }
+          .hero-sub { font-size: 0.94rem; }
+          .hero-actions { gap: 1.25rem; transform: translateY(1rem); }
+          .about, .services, .partners, .cta { padding-inline: 1.5rem; }
+          .about-inner { gap: 2rem; }
+          .services-grid { grid-template-columns: 1fr; }
+          .svc-img { height: 200px; }
+          .cta-inner { gap: 1.75rem; }
+          .cta h2 { font-size: 2rem; }
+        }
         @media (prefers-reduced-motion: reduce) {
           .marquee-inner { animation: none; }
-          .root * { transition: none !important; }
+          .root * { transition: none !important; animation: none !important; }
         }
       `}</style>
 
@@ -357,12 +358,12 @@ export default function HomePage() {
           <div className="hero-bg" />
           <div className="hero-overlay" />
           <div className="hero-content">
-            <h1>Smart<em> Solutions</em><br />for Smarter Operations</h1>
+            <h1>Smart<em> Solutions</em><br /><span className="hero-title-line">for Smart Operations</span></h1>
             <p className="hero-sub">
               We deliver reliable ICT solutions for businesses of all sizes. From installation to maintenance, our team ensures your communication and security systems stay connected, secure, and running smoothly.
             </p>
             <div className="hero-actions">
-              <Link href="/services" className="btn-primary">Explore Services</Link>
+              <Link href="/services" className="btn-primary">Explore services</Link>
             </div>
           </div>
         </section>
