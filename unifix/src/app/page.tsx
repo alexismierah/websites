@@ -31,32 +31,61 @@ const services = [
 ]
 
 const partners = [
-  { name: "Dahua",       logo: "/logos/dahua.png" },
-  { name: "Ruijie",      logo: "/logos/ruijie.png" },
-  { name: "TP-Link",     logo: "/logos/tplink.png" },
-  { name: "BDCOM",       logo: "/logos/bdcom.png" },
-  { name: "ITC Audio",   logo: "/logos/itc-audio.png" },
-  { name: "Growatt",     logo: "/logos/growatt.png" },
-  { name: "Hopewind",    logo: "/logos/hopewind.png" },
-  { name: "Belden",      logo: "/logos/belden.svg" },
-  { name: "Hikvision",   logo: "/logos/hikvision.png" },
-  { name: "ZKTeco",      logo: "/logos/zkteco.png" },
-  { name: "KSTAR",       logo: "/logos/kstar.jpeg" },
-  { name: "Yeastar",     logo: "/logos/yeastar.jpg" },
-  { name: "Deltapath",   logo: "/logos/deltapath.png" },
-  { name: "Sangfor",     logo: "/logos/sangfor.png" },
-  { name: "TOA",         logo: "/logos/toa.png" },
-  { name: "Grandstream", logo: "/logos/grandstream.png" },
+  { name: "Ablerex",        logo: "/partners/ablerex.png" },
+  { name: "Aiphone",        logo: "/partners/aiphone.png" },
+  { name: "APC",            logo: "/partners/apc.png" },
+  { name: "Axis",           logo: "/partners/axis.png" },
+  { name: "Belden",         logo: "/partners/belden.png" },
+  { name: "Cisco",          logo: "/partners/cisco.png" },
+  { name: "CommScope",      logo: "/partners/commscope.png" },
+  { name: "Dahua",          logo: "/partners/dahua.png" },
+  { name: "Deltapath",      logo: "/partners/deltapath.png" },
+  { name: "Dintek",         logo: "/partners/dintek.png" },
+  { name: "D-Link",         logo: "/partners/dlink.png" },
+  { name: "Eaton",          logo: "/partners/eaton.png" },
+  { name: "Fortinet",       logo: "/partners/fortinet.png" },
+  { name: "Grandstream",    logo: "/partners/grandstream.png" },
+  { name: "HID",            logo: "/partners/hid.png" },
+  { name: "Hikvision",      logo: "/partners/hikvision.png" },
+  { name: "Honeywell",      logo: "/partners/honeywell.png" },
+  { name: "HPE Aruba",      logo: "/partners/hpearuba.png" },
+  { name: "ITC",            logo: "/partners/itc.png" },
+  { name: "KSTAR",          logo: "/partners/kstar.png" },
+  { name: "LG",             logo: "/partners/lg.png" },
+  { name: "NEC",             logo: "/partners/nec.png" },
+  { name: "Panasonic",      logo: "/partners/panasonic.png" },
+  { name: "Panduit",        logo: "/partners/panduit.png" },
+  { name: "Premium Line",   logo: "/partners/premuimline.png" },
+  { name: "QNAP",           logo: "/partners/qnap.png" },
+  { name: "Ruijie",         logo: "/partners/ruijie.png" },
+  { name: "Samsung",        logo: "/partners/samsung.png" },
+  { name: "Sangfor",        logo: "/partners/sangfor.png" },
+  { name: "Schneider",      logo: "/partners/schneider.png" },
+  { name: "Seagate",        logo: "/partners/seagate.png" },
+  { name: "Sophos",         logo: "/partners/sophos.png" },
+  { name: "Synology",       logo: "/partners/synology.png" },
+  { name: "TOA",            logo: "/partners/toa.png" },
+  { name: "TP-Link",        logo: "/partners/tplink.png" },
+  { name: "Ubiquiti",       logo: "/partners/ubiquiti.png" },
+  { name: "Vertiv",         logo: "/partners/vertiv.png" },
+  { name: "WatchGuard",     logo: "/partners/watchguard.png" },
+  { name: "Western Digital",logo: "/partners/westerndigital.png" },
+  { name: "Yeastar",        logo: "/partners/yeastar.png" },
+  { name: "ZKTeco",         logo: "/partners/zkteco.png" },
 ]
 
 function PartnerLogo({ name, logo }: { name: string; logo: string }) {
+  const isLargeLogo = ["Grandstream", "Sangfor", "Schneider"].includes(name)
+  const isProminentLogo = ["Seagate", "Sophos"].includes(name)
+
   return (
-    <div className="partner-logo-wrap">
+    <div className={`partner-logo-wrap${isLargeLogo ? " partner-logo-large" : ""}${isProminentLogo ? " partner-logo-prominent" : ""}`}>
       <Image
         src={logo}
         alt={name}
-        width={120}
-        height={44}
+        fill
+        sizes="200px"
+        unoptimized
         onError={(e) => {
           const img = e.currentTarget
           img.style.display = "none"
@@ -268,20 +297,21 @@ export default function HomePage() {
         .marquee-inner {
           display: flex; align-items: center; gap: 2.5rem;
           width: max-content;
-          animation: marquee 36s linear infinite;
+          animation: marquee 72s linear infinite;
         }
-        .marquee-inner:hover { animation-play-state: paused; }
         @keyframes marquee {
           0%   { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
         .partner-logo-wrap {
-          display: flex; align-items: center; justify-content: center;
+          position: relative; display: flex; align-items: center; justify-content: center;
           width: 150px; height: 64px; flex-shrink: 0;
-          opacity: 0.75; transition: opacity 0.3s;
         }
-        .partner-logo-wrap:hover { opacity: 1; }
         .partner-logo-wrap img { max-width: 120px; max-height: 44px; object-fit: contain; display: block; }
+        .partner-logo-wrap.partner-logo-large { width: 180px; }
+        .partner-logo-wrap.partner-logo-large img { max-width: 150px; max-height: 56px; }
+        .partner-logo-wrap.partner-logo-prominent { width: 200px; }
+        .partner-logo-wrap.partner-logo-prominent img { max-width: 180px; max-height: 60px; }
         .partner-text-badge {
           display: none; align-items: center; justify-content: center;
           font-family: var(--font);
