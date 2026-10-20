@@ -5,7 +5,7 @@ import "./globals.css"
 export const metadata = {
   title: "Home | Unifix ICT Solutions",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 }
 
