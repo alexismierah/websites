@@ -107,9 +107,9 @@ export default function Header() {
 
         /* ── Inner layout ── */
         .hdr-inner {
-          max-width: 1180px;
+          max-width: none;
           margin: 0 auto;
-          padding: 0 20px;
+          padding: 0 72px;
           height: 70px;
           display: flex;
           align-items: center;
@@ -117,8 +117,12 @@ export default function Header() {
           gap: 32px;
         }
 
-        @media (max-width: 768px) {
-          .hdr-inner { padding: 0 28px; }
+        @media (max-width: 900px) {
+          .hdr-inner { padding-left: 24px; padding-right: 24px; }
+        }
+
+        @media (max-width: 600px) {
+          .hdr-inner { padding-left: 16px; padding-right: 16px; }
         }
 
         /* ── Logo — matches footer logo style ── */
