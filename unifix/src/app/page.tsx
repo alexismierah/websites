@@ -228,9 +228,9 @@ export default function HomePage() {
           transition: box-shadow 0.25s, transform 0.25s;
         }
         .svc-card:hover { box-shadow: 0 12px 40px rgba(58,137,221,0.12); transform: translateY(-4px); }
-        .svc-img { width: 100%; height: 210px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+        .svc-img { object-fit: cover; display: block; transition: transform 0.5s ease; }
         .svc-card:hover .svc-img { transform: scale(1.04); }
-        .svc-img-wrap { overflow: hidden; flex-shrink: 0; }
+        .svc-img-wrap { position: relative; height: 210px; overflow: hidden; flex-shrink: 0; }
         .svc-body { padding: 1.75rem; display: flex; flex-direction: column; flex: 1; }
         .svc-num { font-size: 0.78rem; font-style: italic; color: var(--ink-3); margin-bottom: 0.5rem; }
         .svc-card h3 { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 0.625rem; }
@@ -341,7 +341,7 @@ export default function HomePage() {
           .about, .services, .partners, .cta { padding-inline: 1.5rem; }
           .about-inner { gap: 2rem; }
           .services-grid { grid-template-columns: 1fr; }
-          .svc-img { height: 200px; }
+          .svc-img-wrap { height: 200px; }
           .cta-inner { gap: 1.75rem; }
           .cta h2 { font-size: 2rem; }
         }
@@ -398,7 +398,13 @@ export default function HomePage() {
               {services.map((s) => (
                 <div className="svc-card" key={s.title}>
                   <div className="svc-img-wrap">
-                    <Image src={s.img} alt={s.title} width={600} height={210} className="svc-img" />
+                    <Image
+                      src={s.img}
+                      alt={s.title}
+                      fill
+                      sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                      className="svc-img"
+                    />
                   </div>
                   <div className="svc-body">
                     <div className="svc-num">{s.num}</div>
