@@ -99,9 +99,7 @@ export default function Footer() {
         .footer-inner {
           position: relative;
           z-index: 1;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 80px 60px 56px;
+          padding: 80px 72px 56px;
           display: grid;
           grid-template-columns: 1fr 240px 1.9fr;
           align-items: start;
@@ -110,7 +108,7 @@ export default function Footer() {
         @media (max-width: 1000px) {
           .footer-inner {
             grid-template-columns: 1fr 1fr;
-            padding: 60px 36px 44px;
+            padding: 60px 72px 44px;
           }
           .footer-form-col {
             grid-column: 1 / -1;
@@ -122,7 +120,7 @@ export default function Footer() {
         @media (max-width: 640px) {
           .footer-inner {
             grid-template-columns: 1fr;
-            padding: 48px 28px 36px;
+            padding: 48px 24px 36px;
           }
           .footer-mid-col {
             padding: 40px 0 0 !important;
@@ -132,6 +130,10 @@ export default function Footer() {
             padding: 40px 0 0 !important;
             margin-top: 0;
           }
+        }
+
+        @media (max-width: 600px) {
+          .footer-inner { padding-left: 16px; padding-right: 16px; }
         }
 
         /* ── Col 1: Brand ── */
@@ -291,6 +293,9 @@ export default function Footer() {
         .footer-form-col {
           padding-left: 60px;
           position: relative;
+          width: 100%;
+          max-width: 640px;
+          justify-self: end;
         }
 
         /* "Get in Touch" heading — vertically aligned with the first nav label */
@@ -458,7 +463,7 @@ export default function Footer() {
         .footer-bottom {
           position: relative;
           z-index: 1;
-          padding: 22px 60px 32px;
+          padding: 22px 72px 32px;
           border-top: 1px solid rgba(45,74,39,0.12);
           display: flex;
           align-items: center;
@@ -472,9 +477,13 @@ export default function Footer() {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 16px 28px 32px;
+            padding: 16px 24px 32px;
             gap: 10px;
           }
+        }
+
+        @media (max-width: 600px) {
+          .footer-bottom { padding-left: 16px; padding-right: 16px; }
         }
 
         .footer-copy {
