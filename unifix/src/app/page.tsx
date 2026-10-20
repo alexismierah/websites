@@ -77,9 +77,10 @@ const partners = [
 function PartnerLogo({ name, logo }: { name: string; logo: string }) {
   const isLargeLogo = ["Grandstream", "Sangfor", "Schneider"].includes(name)
   const isProminentLogo = ["Seagate", "Sophos"].includes(name)
+  const isCompactBrandLogo = ["Ubiquiti", "Vertiv", "WatchGuard"].includes(name)
 
   return (
-    <div className={`partner-logo-wrap${isLargeLogo ? " partner-logo-large" : ""}${isProminentLogo ? " partner-logo-prominent" : ""}`}>
+    <div className={`partner-logo-wrap${isLargeLogo ? " partner-logo-large" : ""}${isProminentLogo ? " partner-logo-prominent" : ""}${isCompactBrandLogo ? " partner-logo-compact-brand" : ""}`}>
       <Image
         src={logo}
         alt={name}
@@ -312,6 +313,9 @@ export default function HomePage() {
         .partner-logo-wrap.partner-logo-large img { max-width: 150px; max-height: 56px; }
         .partner-logo-wrap.partner-logo-prominent { width: 200px; }
         .partner-logo-wrap.partner-logo-prominent img { max-width: 180px; max-height: 60px; }
+        .partner-logo-wrap.partner-logo-prominent img[alt="Sophos"] { max-width: 150px; max-height: 50px; }
+        .partner-logo-wrap.partner-logo-compact-brand { width: 165px; }
+        .partner-logo-wrap.partner-logo-compact-brand img { max-width: 135px; max-height: 50px; }
         .partner-text-badge {
           display: none; align-items: center; justify-content: center;
           font-family: var(--font);
