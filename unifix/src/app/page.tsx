@@ -309,6 +309,7 @@ export default function HomePage() {
           width: 150px; height: 64px; flex-shrink: 0;
         }
         .partner-logo-wrap img { max-width: 120px; max-height: 44px; object-fit: contain; display: block; }
+        .partner-logo-wrap img[alt="Panasonic"] { max-width: 144px; max-height: 53px; }
         .partner-logo-wrap.partner-logo-large { width: 180px; }
         .partner-logo-wrap.partner-logo-large img { max-width: 150px; max-height: 56px; }
         .partner-logo-wrap.partner-logo-prominent { width: 200px; }

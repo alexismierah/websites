@@ -202,7 +202,7 @@ export default function AboutPage() {
                 Back in 2014, Unifix was established with purpose to provide dependable telecommunications, security, and ICT solutions that meet the needs of businesses. From the beginning, the company believed that technology should make work easier and that every client deserves solutions built with care and reliability.
               </p>
               <p>
-                At its core, Unifix is about trust and partnership. The team supports clients from planning to implementation, making sure they feel confident in their systems and in their choice. Every solution is treated as if it were for their own business, because when clients succeed, Unifix succeeds too.
+                At its core, Unifix is about trust and partnership. The team supports clients from planning to implementation, making sure they feel confident in their systems and in their choice. Every solution is treated as if it were for their own business.
               </p>
             </div>
           </div>
