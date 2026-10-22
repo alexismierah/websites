@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
         pathname: '/photo-*',
       },
+      {
+        protocol: 'https',
+        hostname: '20659463.fs1.hubspotusercontent-na1.net',
+        pathname: '/hubfs/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.hotbot.com',
+        pathname: '/articles/wp-content/uploads/**',
+      },
     ],
   },
 };

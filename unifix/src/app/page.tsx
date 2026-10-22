@@ -2,33 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-
-const services = [
-  {
-    num: "01",
-    title: "Structured Cabling",
-    desc: "Scalable, standards-compliant cabling infrastructure engineered for reliability and long-term growth.",
-    tag: "Infrastructure",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    href: "/services/structured-cabling",
-  },
-  {
-    num: "02",
-    title: "CCTV Systems",
-    desc: "High-definition surveillance solutions that keep your premises and people protected around the clock.",
-    tag: "Security",
-    img: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&q=80",
-    href: "/services/cctv",
-  },
-  {
-    num: "03",
-    title: "Network & Security",
-    desc: "Enterprise-grade networking with layered security protocols that protect data and maximize uptime.",
-    tag: "Networking",
-    img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80",
-    href: "/services/network-security",
-  },
-]
+import { services } from "./services/services-data"
 
 const partners = [
   { name: "Ablerex",        logo: "/partners/ablerex.png" },
@@ -430,20 +404,20 @@ export default function HomePage() {
               <Link href="/services" className="btn-outline">View All Services</Link>
             </div>
             <div className="services-grid">
-              {services.map((s) => (
-                <div className="svc-card" key={s.title}>
+              {services.slice(0, 3).map((s, index) => (
+                <div className="svc-card" key={s.href}>
                   <div className="svc-img-wrap">
                     <Image
                       src={s.img}
-                      alt={s.title}
+                      alt={s.name}
                       fill
                       sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
                       className="svc-img"
                     />
                   </div>
                   <div className="svc-body">
-                    <div className="svc-num">{s.num}</div>
-                    <h3>{s.title}</h3>
+                    <div className="svc-num">{String(index + 1).padStart(2, "0")}</div>
+                    <h3>{s.name}</h3>
                     <p>{s.desc}</p>
                     <div className="svc-footer">
                       <span className="svc-tag">{s.tag}</span>
