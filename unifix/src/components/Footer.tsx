@@ -319,7 +319,6 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <p className="brand-eyebrow">Est. 2014</p>
             <h2 className="brand-name">Unifix ICT Solutions</h2>
             <p className="brand-desc">Professional tech solutions crafted to help your business thrive in the digital age.</p>
 
