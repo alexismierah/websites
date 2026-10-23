@@ -171,7 +171,6 @@ export default function AboutPage() {
         .about-cta-btn {
           display: inline-flex;
           align-items: center;
-          gap: 8px;
           background: var(--blue);
           color: #fff;
           padding: 12px 26px;
@@ -184,7 +183,6 @@ export default function AboutPage() {
           transition: background 0.2s, transform 0.15s;
         }
         .about-cta-btn:hover { background: var(--blue-dk); transform: translateY(-2px); }
-        .about-cta-btn svg { width: 15px; height: 15px; }
       `}</style>
 
       <div className="about-root">
@@ -243,10 +241,6 @@ export default function AboutPage() {
             </p>
             <a href="#footer" className="about-cta-btn" onClick={scrollToFooter}>
               Request a Quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
             </a>
           </div>
         </section>
