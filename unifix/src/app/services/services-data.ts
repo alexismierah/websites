@@ -7,7 +7,7 @@ export const services = [
     img: "https://20659463.fs1.hubspotusercontent-na1.net/hubfs/20659463/Best%20Practices%20for%20Regular%20Data%20Center%20Cleaning%20and%20Maintenance%20-%20Featured%20Image%20-%201200x700.png",
   },
   {
-    name: "Network & Security",
+    name: "Cybersecurity & Network",
     desc: "Robust enterprise networking architecture with integrated firewall, intrusion detection, and end-to-end encryption for comprehensive protection.",
     tag: "Network",
     href: "/services/network-security",
@@ -70,7 +70,7 @@ export const services = [
     img: "https://www.holzmedia.de/workspace/bilder/produkte/individuelle-konferenztischanlage-c3-bild-977.jpg",
   },
   {
-    name: "LED Display System",
+    name: "Audio Visual System",
     desc: "High-brightness LED display installations for indoor and outdoor advertising, wayfinding, and dynamic information boards.",
     tag: "Display",
     href: "/services/led-display",

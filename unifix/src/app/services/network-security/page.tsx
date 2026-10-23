@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Network & Security | Unifix ICT Solutions",
+  title: "Cybersecurity & Network | Unifix ICT Solutions",
 }
 
 const features = [
@@ -175,7 +175,7 @@ export default function NetworkSecurityPage() {
                 <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
               </svg>
             </div>
-            <h1 className="sc-hero-h1">Network and Security</h1>
+            <h1 className="sc-hero-h1">Cybersecurity &amp; Network</h1>
             <p className="sc-hero-p">Build a strong and secure digital foundation with reliable connectivity and advanced protection for every system.</p>
           </div>
         </section>
