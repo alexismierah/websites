@@ -98,6 +98,7 @@ export default function Header() {
 
         /* ── Shell ── */
         .hdr {
+          --header-gutter: var(--content-gutter);
           position: fixed;
           top: 0; left: 0; right: 0;
           z-index: 100;
@@ -123,7 +124,7 @@ export default function Header() {
         .hdr-inner {
           max-width: none;
           margin: 0 auto;
-          padding: 0 var(--page-gutter);
+          padding: 0 var(--header-gutter);
           height: 70px;
           display: flex;
           align-items: center;
@@ -221,7 +222,7 @@ export default function Header() {
         .hdr-dd-inner {
           max-width: none;
           margin: 0 auto;
-          padding: 0 var(--page-gutter);
+          padding: 0 var(--header-gutter);
         }
 
         .hdr-dd-body {

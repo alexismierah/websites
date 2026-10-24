@@ -96,6 +96,7 @@ export default function HomePage() {
         }
 
         .root {
+          --home-gutter: var(--content-gutter);
           font-family: var(--font);
           background: var(--white);
           color: var(--ink);
@@ -122,7 +123,7 @@ export default function HomePage() {
         .hero-content {
           position: relative; z-index: 2;
           max-width: 1000px; margin: 0;
-          padding: 7rem var(--page-gutter) 6rem; width: 100%;
+          padding: 7rem var(--home-gutter) 6rem; width: 100%;
         }
         .hero h1 {
           font-family: var(--font);
@@ -162,7 +163,7 @@ export default function HomePage() {
         }
         .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 12px 28px rgba(20,91,163,0.35); }
         /* ── STATS ── */
-        .stats { background: #1e3a5f; padding: 0 var(--page-gutter); }
+        .stats { background: #1e3a5f; padding: 0 var(--home-gutter); }
         .stats-inner {
           max-width: none; margin: 0;
           display: grid; grid-template-columns: repeat(3, 1fr);
@@ -187,7 +188,7 @@ export default function HomePage() {
         }
 
         /* ── ABOUT ── */
-        .about { background: var(--white); padding: 7rem var(--page-gutter); }
+        .about { background: var(--white); padding: 7rem var(--home-gutter); }
         .about-inner {
           max-width: none; margin: 0;
           display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;
@@ -214,7 +215,7 @@ export default function HomePage() {
         .about-image:hover img { transform: scale(1.03); }
 
         /* ── SERVICES ── */
-        .services { background: var(--surface); padding: 7rem var(--page-gutter); border-top: 1px solid var(--border-2); }
+        .services { background: var(--surface); padding: 7rem var(--home-gutter); border-top: 1px solid var(--border-2); }
         .services-inner { max-width: none; margin: 0; }
         .services-head {
           display: flex; justify-content: space-between; align-items: flex-end;
@@ -255,7 +256,7 @@ export default function HomePage() {
         .svc-card:hover .svc-link { gap: 9px; }
 
         /* ── PARTNERS ── */
-        .partners { padding: 6rem var(--page-gutter); background: var(--white); }
+        .partners { padding: 6rem var(--home-gutter); background: var(--white); }
         .partners-inner { max-width: none; margin: 0; }
         .partners-head { text-align: center; margin-bottom: 2.75rem; }
         .partners-head h2 {
@@ -300,7 +301,7 @@ export default function HomePage() {
         }
 
         /* ── CTA ── */
-        .cta { position: relative; overflow: hidden; padding: 7rem var(--page-gutter); }
+        .cta { position: relative; overflow: hidden; padding: 7rem var(--home-gutter); }
         .cta-bg {
           position: absolute; inset: 0;
           background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80');

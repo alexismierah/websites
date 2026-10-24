@@ -79,6 +79,7 @@ export default function Footer() {
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
         .footer-root {
+          --footer-gutter: var(--content-gutter);
           --font: var(--font-site);
           font-family: var(--font);
           -webkit-font-smoothing: antialiased;
@@ -102,7 +103,7 @@ export default function Footer() {
         .footer-grid {
           max-width: none;
           margin: 0;
-          padding: 80px var(--page-gutter) 64px;
+          padding: 80px var(--footer-gutter) 64px;
           display: grid;
           grid-template-columns: 1.5fr 1fr 1.8fr;
           gap: 72px;
@@ -110,11 +111,11 @@ export default function Footer() {
         }
 
         @media (max-width: 900px) {
-          .footer-grid { grid-template-columns: 1fr 1fr; gap: 48px; padding: 56px var(--page-gutter) 48px; }
+          .footer-grid { grid-template-columns: 1fr 1fr; gap: 48px; padding: 56px var(--footer-gutter) 48px; }
         }
 
         @media (max-width: 600px) {
-          .footer-grid { grid-template-columns: 1fr; gap: 40px; padding: 48px var(--page-gutter) 40px; }
+          .footer-grid { grid-template-columns: 1fr; gap: 40px; padding: 48px var(--footer-gutter) 40px; }
         }
 
         /* Brand column */
@@ -295,7 +296,7 @@ export default function Footer() {
         .footer-bottom {
           max-width: none;
           margin: 0;
-          padding: 22px var(--page-gutter);
+          padding: 22px var(--footer-gutter);
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -303,7 +304,7 @@ export default function Footer() {
         }
 
         @media (max-width: 600px) {
-          .footer-bottom { flex-direction: column; text-align: center; padding: 20px var(--page-gutter); }
+          .footer-bottom { flex-direction: column; text-align: center; padding: 20px var(--footer-gutter); }
         }
 
         .footer-copy { font-size: 11.5px; font-weight: 400; color: #4f6479; letter-spacing: 0.01em; }

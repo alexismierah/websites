@@ -139,7 +139,7 @@ export default function AboutPage() {
           position: relative;
           overflow: hidden;
         }
-        .about-root .about-cta { padding-inline: var(--page-gutter); }
+        .about-root .about-cta { padding-inline: var(--content-gutter); }
         .about-cta::before {
           content: '';
           position: absolute;
