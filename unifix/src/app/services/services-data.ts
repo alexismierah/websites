@@ -4,7 +4,7 @@ export const services = [
     desc: "We design and implement reliable cabling infrastructure that forms the backbone of your connectivity — built for scale, speed, and long-term performance.",
     tag: "Infrastructure",
     href: "/services/structured-cabling",
-    img: "https://20659463.fs1.hubspotusercontent-na1.net/hubfs/20659463/Best%20Practices%20for%20Regular%20Data%20Center%20Cleaning%20and%20Maintenance%20-%20Featured%20Image%20-%201200x700.png",
+    img: "https://mds.com.om/wp-content/uploads/2024/10/structuredcabling.jpg",
   },
   {
     name: "Cybersecurity & Network",
@@ -18,14 +18,14 @@ export const services = [
     desc: "Our solutions include IP camera networks for continuous site monitoring, remote security management, and intelligent video analytics.",
     tag: "Security",
     href: "/services/cctv",
-    img: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&q=80",
+    img: "https://vetec.dk/wp-content/uploads/2023/02/CCTV-solution.png",
   },
   {
     name: "IP PABX Telephone System",
     desc: "We design and implement scalable VoIP telephony architectures that manage internal and external voice communications over a unified data network.",
     tag: "Communication",
     href: "/services/ip-pbx",
-    img: "https://roicallcentersolutions.com/wp-content/uploads/2018/02/business-businessmen-classroom-267507.jpg",
+    img: "https://www.ioephonesystem.com/storage/uploads/images/202408/20/1724121890_H3LbGqG7nO.jpg",
   },
   {
     name: "Server & Cloud",
@@ -74,7 +74,7 @@ export const services = [
     desc: "High-brightness LED display installations for indoor and outdoor advertising, wayfinding, and dynamic information boards.",
     tag: "Display",
     href: "/services/led-display",
-    img: "https://www.viewsonic.com/vsAssetFile/ph/img/resize/product-rc/_direct_view_led/LDC031-180/sc/Lobby.webp",
+    img: "https://www.viewsonic.com/library/wp-content/uploads/2024/08/LED-display-image.png",
   },
   {
     name: "Parking System",
