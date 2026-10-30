@@ -65,7 +65,7 @@ export default function AboutPage() {
           letter-spacing: -0.02em;
           margin: 0 0 0.75rem;
         }
-        .about-story-h2 em { font-style: italic; color: var(--blue); font-weight: 400; }
+        .about-story-h2 em { font-style: normal; color: var(--blue); font-weight: 400; }
         .about-story-rule { width: 32px; height: 2px; background: var(--blue); border-radius: 1px; margin-top: 1.25rem; }
         .about-story-body p {
           font-size: 1rem;
@@ -92,7 +92,7 @@ export default function AboutPage() {
           margin: 0;
           letter-spacing: -0.02em;
         }
-        .about-mv-title em { font-style: italic; color: var(--blue); font-weight: 400; }
+        .about-mv-title em { font-style: normal; color: var(--blue); font-weight: 400; }
         .about-mv-cards {
           display: grid;
           grid-template-columns: 1fr;

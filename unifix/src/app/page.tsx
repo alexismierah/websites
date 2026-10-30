@@ -135,7 +135,7 @@ export default function HomePage() {
           margin-bottom: 1.25rem;
           letter-spacing: 0;
         }
-        .hero h1 em { font-style: italic; font-weight: 500; color: #93c5fd; }
+        .hero h1 em { font-style: normal; font-weight: 500; color: #93c5fd; }
         .hero-title-line { white-space: nowrap; }
         .hero-sub {
           font-size: 1.02rem;
@@ -199,7 +199,7 @@ export default function HomePage() {
           font-size: clamp(1.6rem, 2.7vw, 2.4rem);
           font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1.25rem;
         }
-        .about h2 em { font-style: italic; color: var(--blue); }
+        .about h2 em { font-style: normal; color: var(--blue); }
         .about p { font-size: 0.9rem; color: var(--ink-3); line-height: 1.85; font-weight: 400; margin-bottom: 1rem; }
         .btn-outline {
           margin-top: 0.75rem;
@@ -225,7 +225,7 @@ export default function HomePage() {
           font-family: var(--font);
           font-size: clamp(1.6rem, 2.7vw, 2.4rem); font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; color: var(--ink);
         }
-        .services-head h2 em { font-style: italic; color: var(--blue); }
+        .services-head h2 em { font-style: normal; color: var(--blue); }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .svc-card {
           background: var(--white); border: 1px solid var(--border); border-radius: 8px;
@@ -237,7 +237,7 @@ export default function HomePage() {
         .svc-card:hover .svc-img { transform: scale(1.04); }
         .svc-img-wrap { position: relative; height: 210px; overflow: hidden; flex-shrink: 0; }
         .svc-body { padding: 1.75rem; display: flex; flex-direction: column; flex: 1; }
-        .svc-num { font-size: 0.78rem; font-style: italic; color: var(--ink-3); margin-bottom: 0.5rem; }
+        .svc-num { font-size: 0.78rem; font-style: normal; color: var(--ink-3); margin-bottom: 0.5rem; }
         .svc-card h3 { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 0.625rem; }
         .svc-card p { font-size: 0.8125rem; color: var(--ink-3); line-height: 1.75; font-weight: 400; flex: 1; }
         .svc-footer {
@@ -320,7 +320,7 @@ export default function HomePage() {
           font-family: var(--font);
           font-size: clamp(1.8rem, 3.1vw, 2.8rem); font-weight: 500; letter-spacing: -0.025em; color: #fff; line-height: 1.25;
         }
-        .cta h2 em { font-style: italic; color: #bfdbfe; }
+        .cta h2 em { font-style: normal; color: #bfdbfe; }
         .cta-right { display: flex; flex-direction: column; gap: 1.25rem; align-items: flex-start; }
         .cta p { font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.8; font-weight: 400; }
         .cta-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
