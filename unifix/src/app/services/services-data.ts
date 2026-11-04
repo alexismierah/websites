@@ -7,10 +7,10 @@ export const services = [
     img: "https://mds.com.om/wp-content/uploads/2024/10/structuredcabling.jpg",
   },
   {
-    name: "Cybersecurity & Network",
+    name: "Cybersecurity and Network",
     desc: "Robust enterprise networking architecture with integrated firewall, intrusion detection, and end-to-end encryption for comprehensive protection.",
     tag: "Network",
-    href: "/services/network-security",
+    href: "/services/cybersecurity-and-network",
     img: "https://www.hotbot.com/articles/wp-content/uploads/2025/11/top-networking-equipment-in-2025-best-routers-switches-access-points-jw-scaled.jpeg",
   },
   {
@@ -73,7 +73,7 @@ export const services = [
     name: "Audio Visual System",
     desc: "High-brightness LED display installations for indoor and outdoor advertising, wayfinding, and dynamic information boards.",
     tag: "Display",
-    href: "/services/led-display",
+    href: "/services/audio-visual",
     img: "https://www.viewsonic.com/library/wp-content/uploads/2024/08/LED-display-image.png",
   },
   {

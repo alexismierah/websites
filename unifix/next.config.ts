@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/services/led-display",
+        destination: "/services/audio-visual",
+        permanent: true,
+      },
+      {
+        source: "/services/network-security",
+        destination: "/services/cybersecurity-and-network",
+        permanent: true,
+      },
+    ]
+  },
   serverExternalPackages: ["nodemailer"],
   images: {
     remotePatterns: [

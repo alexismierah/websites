@@ -12,7 +12,7 @@ type Service = {
 
 const serviceLinks: Service[] = [
   { href: "/services/structured-cabling", label: "Structured Network Cabling", category: "Infrastructure", desc: "Fiber and copper cabling built to standard" },
-  { href: "/services/network-security",   label: "Cybersecurity & Network",         category: "Infrastructure", desc: "Switching, Wi-Fi, firewalls and protection" },
+  { href: "/services/cybersecurity-and-network", label: "Cybersecurity and Network", category: "Infrastructure", desc: "Switching, Wi-Fi, firewalls and protection" },
   { href: "/services/server-cloud",       label: "Server & Cloud",             category: "Infrastructure", desc: "On-site servers, hosting and cloud migration" },
   { href: "/services/cctv",               label: "CCTV & Surveillance",        category: "Security",       desc: "Cameras and recording you can watch remotely" },
   { href: "/services/access-control",     label: "Access Control System",      category: "Security",       desc: "Card, PIN and biometric door entry" },
@@ -21,7 +21,7 @@ const serviceLinks: Service[] = [
   { href: "/services/public-address",     label: "Public Address System",      category: "Communications", desc: "Clear announcements across every zone" },
   { href: "/services/conference",         label: "Conference System",          category: "Communications", desc: "Audio and video for meeting rooms" },
   { href: "/services/ups",                label: "Uninterruptible Power Supply", category: "Energy",       desc: "Backup power that keeps systems running" },
-  { href: "/services/led-display",        label: "Audio Visual System",         category: "Operations",     desc: "Signage and video walls for any space" },
+  { href: "/services/audio-visual",       label: "Audio Visual System",         category: "Operations",     desc: "Signage and video walls for any space" },
   { href: "/services/parking",            label: "Parking System",             category: "Operations",     desc: "Barriers, ticketing and vehicle counting" },
 ]
 
