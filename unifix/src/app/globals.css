@@ -102,7 +102,7 @@
 }
 
 .about-root .about-story {
-  padding-inline: var(--content-gutter);
+  padding-inline: var(--about-gutter);
 }
 
 .about-root .about-story-inner {
@@ -112,7 +112,7 @@
 }
 
 .about-root .about-mv {
-  padding-inline: var(--content-gutter);
+  padding-inline: var(--about-gutter);
 }
 
 .about-root .about-mv-inner {
@@ -122,12 +122,16 @@
 }
 
 .sp .sp-rows {
-  padding-inline: var(--content-gutter);
+  padding-inline: var(--services-gutter);
 }
 
 .sp .sp-hero,
 .sp .sp-cta {
-  padding-inline: var(--content-gutter);
+  padding-inline: var(--services-gutter);
+}
+
+.sc-root {
+  --service-detail-gutter: calc(var(--content-gutter) + 2rem);
 }
 
 .sc-root .sc-hero {
@@ -140,12 +144,12 @@
   max-width: none;
   margin-left: 0;
   margin-right: 0;
-  padding-inline: var(--content-gutter);
+  padding-inline: var(--service-detail-gutter);
   align-items: center;
 }
 
 .sc-root .sc-about {
-  padding-inline: var(--content-gutter);
+  padding-inline: var(--service-detail-gutter);
 }
 
 .sc-root .sc-about-inner {
@@ -157,6 +161,10 @@
 @media (max-width: 1100px) {
   :root {
     --content-gutter: var(--page-gutter);
+  }
+
+  .sc-root {
+    --service-detail-gutter: var(--content-gutter);
   }
 }
 

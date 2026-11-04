@@ -98,7 +98,7 @@ export default function Header() {
 
         /* ── Shell ── */
         .hdr {
-          --header-gutter: var(--content-gutter);
+          --header-gutter: calc(var(--content-gutter) + 2rem);
           position: fixed;
           top: 0; left: 0; right: 0;
           z-index: 100;
@@ -451,6 +451,7 @@ export default function Header() {
 
         /* ── Responsive ── */
         @media (max-width: 1100px) {
+          .hdr { --header-gutter: var(--content-gutter); }
           .hdr-dd-body { grid-template-columns: 210px 1fr; gap: 1.5rem; }
           .hdr-dd-grid { grid-template-columns: repeat(2, 1fr); }
         }

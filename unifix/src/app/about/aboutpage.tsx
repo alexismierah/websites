@@ -23,9 +23,14 @@ export default function AboutPage() {
         }
 
         .about-root {
+          --about-gutter: calc(var(--content-gutter) + 2rem);
           font-family: 'Instrument Sans', sans-serif;
           color: var(--ink-2);
           background: #fff;
+        }
+
+        @media (max-width: 1100px) {
+          .about-root { --about-gutter: var(--content-gutter); }
         }
 
         .section-tag {
@@ -58,14 +63,15 @@ export default function AboutPage() {
           .about-story-left { position: sticky; top: 100px; }
         }
         .about-story-h2 {
-          font-size: clamp(1.75rem, 3vw, 2.25rem);
-          font-weight: 500;
+          font-family: 'Instrument Sans', sans-serif;
+          font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+          font-weight: 400;
           color: var(--ink);
-          line-height: 1.2;
+          line-height: 1.1;
           letter-spacing: -0.02em;
           margin: 0 0 0.75rem;
         }
-        .about-story-h2 em { font-style: normal; color: var(--blue); font-weight: 400; }
+        .about-story-h2 em { font-style: italic; color: var(--blue); font-weight: 400; }
         .about-story-rule { width: 32px; height: 2px; background: var(--blue); border-radius: 1px; margin-top: 1.25rem; }
         .about-story-body p {
           font-size: 1rem;
@@ -86,13 +92,15 @@ export default function AboutPage() {
         .about-mv-inner { max-width: 1080px; margin: 0 auto; }
         .about-mv-header { margin-bottom: 2.5rem; }
         .about-mv-title {
+          font-family: 'Instrument Sans', sans-serif;
           font-size: clamp(1.6rem, 2.5vw, 2rem);
-          font-weight: 500;
+          font-weight: 400;
           color: var(--ink);
           margin: 0;
+          line-height: 1.1;
           letter-spacing: -0.02em;
         }
-        .about-mv-title em { font-style: normal; color: var(--blue); font-weight: 400; }
+        .about-mv-title em { font-style: italic; color: var(--blue); font-weight: 400; }
         .about-mv-cards {
           display: grid;
           grid-template-columns: 1fr;
@@ -139,7 +147,7 @@ export default function AboutPage() {
           position: relative;
           overflow: hidden;
         }
-        .about-root .about-cta { padding-inline: var(--content-gutter); }
+        .about-root .about-cta { padding-inline: var(--about-gutter); }
         .about-cta::before {
           content: '';
           position: absolute;
@@ -148,15 +156,16 @@ export default function AboutPage() {
         }
         .about-cta-inner { position: relative; max-width: none; margin: 0; }
         .about-cta-h2 {
+          font-family: 'Instrument Sans', sans-serif;
           max-width: 32ch;
           font-size: clamp(1.5rem, 2.5vw, 2rem);
-          font-weight: 500;
+          font-weight: 400;
           color: #fff;
           margin-bottom: 0.75rem;
           margin-left: auto;
           margin-right: auto;
           letter-spacing: -0.02em;
-          line-height: 1.25;
+          line-height: 1.1;
         }
         .about-cta-p {
           max-width: 60ch;

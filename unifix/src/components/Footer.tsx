@@ -79,7 +79,7 @@ export default function Footer() {
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
         .footer-root {
-          --footer-gutter: var(--content-gutter);
+          --footer-gutter: calc(var(--content-gutter) + 2rem);
           --font: var(--font-site);
           font-family: var(--font);
           -webkit-font-smoothing: antialiased;
@@ -87,6 +87,10 @@ export default function Footer() {
           color: #e8e6e1;
           position: relative;
           overflow: hidden;
+        }
+
+        @media (max-width: 1100px) {
+          .footer-root { --footer-gutter: var(--content-gutter); }
         }
 
         .footer-root::before {

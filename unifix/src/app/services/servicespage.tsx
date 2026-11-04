@@ -40,7 +40,16 @@ export default function ServicesPage() {
           --border-2:  rgba(17,24,39,0.05);
         }
 
-        .sp { font-family: 'Instrument Sans', sans-serif; background: #fff; color: var(--ink); }
+        .sp {
+          --services-gutter: calc(var(--content-gutter) + 2rem);
+          font-family: 'Instrument Sans', sans-serif;
+          background: #fff;
+          color: var(--ink);
+        }
+
+        @media (max-width: 1100px) {
+          .sp { --services-gutter: var(--content-gutter); }
+        }
 
         /* ── HERO ── */
         .sp-hero {
@@ -72,7 +81,7 @@ export default function ServicesPage() {
         .sp-eyebrow-bar { width: 24px; height: 1.5px; background: var(--blue); }
         .sp-hero h1 {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+          font-size: clamp(2.2rem, 4vw, 3.3rem);
           font-weight: 400;
           line-height: 1.1;
           letter-spacing: -0.02em;

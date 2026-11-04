@@ -78,6 +78,7 @@ export default function HomePage() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
@@ -96,7 +97,7 @@ export default function HomePage() {
         }
 
         .root {
-          --home-gutter: var(--content-gutter);
+          --home-gutter: calc(var(--content-gutter) + 2rem);
           font-family: var(--font);
           background: var(--white);
           color: var(--ink);
@@ -128,14 +129,14 @@ export default function HomePage() {
         .hero h1 {
           font-family: var(--font);
           font-size: clamp(2.35rem, 4.2vw, 3.6rem);
-          font-weight: 500;
+          font-weight: 400;
           line-height: 1.08;
           color: #fff;
           max-width: none;
           margin-bottom: 1.25rem;
           letter-spacing: 0;
         }
-        .hero h1 em { font-style: normal; font-weight: 500; color: #93c5fd; }
+        .hero h1 em { font-style: italic; font-weight: 400; color: #93c5fd; }
         .hero-title-line { white-space: nowrap; }
         .hero-sub {
           font-size: 1.02rem;
@@ -195,11 +196,11 @@ export default function HomePage() {
         }
         .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.25rem; }
         .about h2 {
-          font-family: var(--font);
+          font-family: 'Instrument Sans', sans-serif;
           font-size: clamp(1.6rem, 2.7vw, 2.4rem);
-          font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1.25rem;
+          font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1.25rem;
         }
-        .about h2 em { font-style: normal; color: var(--blue); }
+        .about h2 em { font-style: italic; color: var(--blue); }
         .about p { font-size: 0.9rem; color: var(--ink-3); line-height: 1.85; font-weight: 400; margin-bottom: 1rem; }
         .btn-outline {
           margin-top: 0.75rem;
@@ -222,10 +223,10 @@ export default function HomePage() {
           margin-bottom: 3.5rem; gap: 2rem; flex-wrap: wrap;
         }
         .services-head h2 {
-          font-family: var(--font);
-          font-size: clamp(1.6rem, 2.7vw, 2.4rem); font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; color: var(--ink);
+          font-family: 'Instrument Sans', sans-serif;
+          font-size: clamp(1.6rem, 2.7vw, 2.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
         }
-        .services-head h2 em { font-style: normal; color: var(--blue); }
+        .services-head h2 em { font-style: italic; color: var(--blue); }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .svc-card {
           background: var(--white); border: 1px solid var(--border); border-radius: 8px;
@@ -260,8 +261,8 @@ export default function HomePage() {
         .partners-inner { max-width: none; margin: 0; }
         .partners-head { text-align: center; margin-bottom: 2.75rem; }
         .partners-head h2 {
-          font-family: var(--font);
-          font-size: 1.75rem; font-weight: 500; letter-spacing: -0.02em; color: var(--ink); margin-top: 0.5rem;
+          font-family: 'Instrument Sans', sans-serif;
+          font-size: 1.75rem; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); margin-top: 0.5rem;
         }
 
         /* ── MARQUEE ── */
@@ -317,10 +318,10 @@ export default function HomePage() {
           display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
         }
         .cta h2 {
-          font-family: var(--font);
-          font-size: clamp(1.8rem, 3.1vw, 2.8rem); font-weight: 500; letter-spacing: -0.025em; color: #fff; line-height: 1.25;
+          font-family: 'Instrument Sans', sans-serif;
+          font-size: clamp(1.8rem, 3.1vw, 2.8rem); font-weight: 400; letter-spacing: -0.02em; color: #fff; line-height: 1.1;
         }
-        .cta h2 em { font-style: normal; color: #bfdbfe; }
+        .cta h2 em { font-style: italic; color: #bfdbfe; }
         .cta-right { display: flex; flex-direction: column; gap: 1.25rem; align-items: flex-start; }
         .cta p { font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.8; font-weight: 400; }
         .cta-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -342,13 +343,16 @@ export default function HomePage() {
           .stat-item:last-child { border-bottom: none; }
           .services-head { flex-direction: column; align-items: flex-start; }
         }
+        @media (max-width: 1100px) {
+          .root { --home-gutter: var(--content-gutter); }
+        }
         @media (max-width: 600px) {
           .hero-overlay { background: linear-gradient(90deg, rgba(9,19,33,0.88), rgba(9,19,33,0.54)); }
-          .root .hero-content { padding: 6rem 1.5rem 4rem; }
+          .root .hero-content { padding: 6rem var(--home-gutter) 4rem; }
           .hero h1 { font-size: clamp(1.35rem, 6.2vw, 2.35rem); }
           .hero-sub { font-size: 0.94rem; }
           .hero-actions { gap: 1.25rem; transform: translateY(1rem); }
-          .about, .services, .partners, .cta { padding-inline: 1.5rem; }
+          .about, .services, .partners, .cta { padding-inline: var(--home-gutter); }
           .about-inner { gap: 2rem; }
           .services-grid { grid-template-columns: 1fr; }
           .svc-img-wrap { height: 200px; }
