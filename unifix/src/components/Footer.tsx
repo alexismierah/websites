@@ -127,7 +127,7 @@ export default function Footer() {
           display: inline-flex;
           align-items: center;
           gap: 6px;
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 600;
           letter-spacing: 0.18em;
           text-transform: uppercase;
@@ -146,7 +146,7 @@ export default function Footer() {
         }
 
         .brand-desc {
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 400;
           line-height: 1.8;
           color: #8aa0b8;
@@ -180,7 +180,7 @@ export default function Footer() {
 
         /* Column label */
         .col-label {
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 700;
           letter-spacing: 0.16em;
           text-transform: uppercase;
@@ -194,7 +194,7 @@ export default function Footer() {
         .nav-item {
           display: inline-flex;
           align-items: center;
-          font-size: 13.5px;
+          font-size: 14.5px;
           font-weight: 500;
           color: #8aa0b8;
           padding: 7px 0;
@@ -212,7 +212,7 @@ export default function Footer() {
           display: flex;
           align-items: center;
           gap: 10px;
-          font-size: 12.5px;
+          font-size: 14px;
           font-weight: 400;
           color: #8aa0b8;
           padding: 7px 0;
@@ -227,7 +227,7 @@ export default function Footer() {
 
         .field-label {
           display: block;
-          font-size: 10px;
+          font-size: 11px;
           font-weight: 600;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -245,7 +245,7 @@ export default function Footer() {
           border-radius: 999px;
           padding: 10px 16px;
           font-family: var(--font);
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 400;
           color: #e8e6e1;
           transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
@@ -264,7 +264,7 @@ export default function Footer() {
 
         textarea.field-input { resize: none; border-radius: 24px; padding: 11px 16px; line-height: 1.6; }
 
-        .field-error { color: #f87171; font-size: 11px; margin-top: 4px; font-weight: 500; }
+        .field-error { color: #f87171; font-size: 12px; margin-top: 4px; font-weight: 500; }
 
         .submit-btn {
           margin-top: 6px;
@@ -275,7 +275,7 @@ export default function Footer() {
           border-radius: 999px;
           padding: 10px 24px;
           font-family: var(--font);
-          font-size: 12px;
+          font-size: 14px;
           font-weight: 600;
           letter-spacing: 0.01em;
           color: #fff;
@@ -311,8 +311,8 @@ export default function Footer() {
           .footer-bottom { flex-direction: column; text-align: center; padding: 20px var(--footer-gutter); }
         }
 
-        .footer-copy { font-size: 11.5px; font-weight: 400; color: #4f6479; letter-spacing: 0.01em; }
-        .footer-tagline { font-size: 11px; font-weight: 500; color: #4f6479; letter-spacing: 0.02em; }
+        .footer-copy { font-size: 12.5px; font-weight: 400; color: #4f6479; letter-spacing: 0.01em; }
+        .footer-tagline { font-size: 12px; font-weight: 500; color: #4f6479; letter-spacing: 0.02em; }
 
         @media (prefers-reduced-motion: reduce) {
           .footer-root * { transition: none !important; }
