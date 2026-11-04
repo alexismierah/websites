@@ -197,7 +197,7 @@ export default function HomePage() {
         .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.25rem; }
         .about h2 {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(1.6rem, 2.7vw, 2.4rem);
+          font-size: clamp(1.85rem, 3.1vw, 2.7rem);
           font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1.25rem;
         }
         .about h2 em { font-style: italic; color: var(--blue); }
@@ -224,7 +224,7 @@ export default function HomePage() {
         }
         .services-head h2 {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(1.6rem, 2.7vw, 2.4rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
+          font-size: clamp(1.85rem, 3.1vw, 2.7rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
         }
         .services-head h2 em { font-style: italic; color: var(--blue); }
         .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
