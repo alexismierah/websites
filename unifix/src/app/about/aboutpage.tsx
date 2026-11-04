@@ -64,7 +64,7 @@ export default function AboutPage() {
         }
         .about-story-h2 {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+          font-size: clamp(1.85rem, 3.1vw, 2.7rem);
           font-weight: 400;
           color: var(--ink);
           line-height: 1.1;
@@ -72,6 +72,7 @@ export default function AboutPage() {
           margin: 0 0 0.75rem;
         }
         .about-story-h2 em { font-style: italic; color: var(--blue); font-weight: 400; }
+        .about-story-body { max-width: 62ch; margin-inline: auto; }
         .about-story-rule { width: 32px; height: 2px; background: var(--blue); border-radius: 1px; margin-top: 1.25rem; }
         .about-story-body p {
           font-size: 1rem;
@@ -93,7 +94,7 @@ export default function AboutPage() {
         .about-mv-header { margin-bottom: 2.5rem; }
         .about-mv-title {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(1.6rem, 2.5vw, 2rem);
+          font-size: clamp(1.85rem, 3.1vw, 2.7rem);
           font-weight: 400;
           color: var(--ink);
           margin: 0;

@@ -77,8 +77,7 @@ export default function HomePage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
@@ -93,12 +92,14 @@ export default function HomePage() {
           --white:     #ffffff;
           --border:    rgba(17,24,39,0.09);
           --border-2:  rgba(17,24,39,0.05);
-          --font:      'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
         }
 
         .root {
           --home-gutter: calc(var(--content-gutter) + 2rem);
-          font-family: var(--font);
+          --font-sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+          --font-mono: var(--font-geist-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+          --font-heading: var(--font-sans);
+          font-family: var(--font-sans);
           background: var(--white);
           color: var(--ink);
           overflow-x: hidden;
@@ -127,7 +128,7 @@ export default function HomePage() {
           padding: 7rem var(--home-gutter) 6rem; width: 100%;
         }
         .hero h1 {
-          font-family: var(--font);
+          font-family: var(--font-heading);
           font-size: clamp(2.35rem, 4.2vw, 3.6rem);
           font-weight: 400;
           line-height: 1.08;
@@ -153,7 +154,7 @@ export default function HomePage() {
         .btn-primary, .btn-outline, .btn-ghost-white2 {
           display: inline-flex; align-items: center; justify-content: center;
           height: 44px; padding: 0 22px;
-          font-family: var(--font); font-size: 0.8125rem; font-weight: 600;
+          font-family: var(--font-sans); font-size: 0.8125rem; font-weight: 600;
           text-decoration: none;
         }
         .btn-primary {
@@ -184,7 +185,7 @@ export default function HomePage() {
         }
         .stat-icon svg { width: 18px; height: 18px; }
         .stat-n {
-          font-family: var(--font);
+          font-family: var(--font-sans);
           font-size: 14px; font-weight: 500; color: #fff; letter-spacing: 0;
         }
 
@@ -196,7 +197,7 @@ export default function HomePage() {
         }
         .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue); margin-bottom: 1.25rem; }
         .about h2 {
-          font-family: 'Instrument Sans', sans-serif;
+          font-family: var(--font-heading);
           font-size: clamp(1.85rem, 3.1vw, 2.7rem);
           font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1.25rem;
         }
@@ -223,7 +224,7 @@ export default function HomePage() {
           margin-bottom: 3.5rem; gap: 2rem; flex-wrap: wrap;
         }
         .services-head h2 {
-          font-family: 'Instrument Sans', sans-serif;
+          font-family: var(--font-heading);
           font-size: clamp(1.85rem, 3.1vw, 2.7rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
         }
         .services-head h2 em { font-style: italic; color: var(--blue); }
@@ -239,7 +240,7 @@ export default function HomePage() {
         .svc-img-wrap { position: relative; height: 210px; overflow: hidden; flex-shrink: 0; }
         .svc-body { padding: 1.75rem; display: flex; flex-direction: column; flex: 1; }
         .svc-num { font-size: 0.78rem; font-style: normal; color: var(--ink-3); margin-bottom: 0.5rem; }
-        .svc-card h3 { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 0.625rem; }
+        .svc-card h3 { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 0.625rem; }
         .svc-card p { font-size: 0.8125rem; color: var(--ink-3); line-height: 1.75; font-weight: 400; flex: 1; }
         .svc-footer {
           display: flex; justify-content: space-between; align-items: center;
@@ -261,7 +262,7 @@ export default function HomePage() {
         .partners-inner { max-width: none; margin: 0; }
         .partners-head { text-align: center; margin-bottom: 2.75rem; }
         .partners-head h2 {
-          font-family: 'Instrument Sans', sans-serif;
+          font-family: var(--font-heading);
           font-size: 1.75rem; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); margin-top: 0.5rem;
         }
 
@@ -295,7 +296,7 @@ export default function HomePage() {
         .partner-logo-wrap.partner-logo-compact-brand img { max-width: 135px; max-height: 50px; }
         .partner-text-badge {
           display: none; align-items: center; justify-content: center;
-          font-family: var(--font);
+          font-family: var(--font-sans);
           font-size: 0.78rem; font-weight: 600; color: var(--ink-2);
           letter-spacing: -0.01em; white-space: nowrap;
           padding: 6px 14px; border: 1.5px solid var(--border); border-radius: 6px;
@@ -318,7 +319,7 @@ export default function HomePage() {
           display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
         }
         .cta h2 {
-          font-family: 'Instrument Sans', sans-serif;
+          font-family: var(--font-heading);
           font-size: clamp(1.8rem, 3.1vw, 2.8rem); font-weight: 400; letter-spacing: -0.02em; color: #fff; line-height: 1.1;
         }
         .cta h2 em { font-style: italic; color: #bfdbfe; }

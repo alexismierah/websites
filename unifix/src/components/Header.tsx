@@ -158,7 +158,7 @@ export default function Header() {
           padding: 8px 14px;
           border-radius: 8px;
           font-family: var(--font-display);
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           font-weight: 500;
           letter-spacing: 0;
           color: var(--ink-2);
@@ -242,14 +242,14 @@ export default function Header() {
         }
         .hdr-dd-rail-title {
           font-family: var(--font-display);
-          font-size: 1.08rem;
+          font-size: 1.15rem;
           font-weight: 600;
           letter-spacing: -0.02em;
           color: var(--ink);
           margin: 0 0 4px 12px;
         }
         .hdr-dd-rail-sub {
-          font-size: 0.8rem;
+          font-size: 0.85rem;
           line-height: 1.5;
           color: var(--ink-3);
           margin: 0 0 14px 12px;
@@ -267,7 +267,7 @@ export default function Header() {
           cursor: pointer;
           text-align: left;
           font-family: var(--font-ui);
-          font-size: 0.85rem;
+          font-size: 0.9rem;
           font-weight: 500;
           color: var(--ink-2);
           transition: background 0.14s, color 0.14s;
@@ -294,7 +294,7 @@ export default function Header() {
         .hdr-dd-item:hover { background: #f3f7fc; border-color: rgba(58,137,221,0.18); }
         .hdr-dd-lbl {
           font-family: var(--font-display);
-          font-size: 0.82rem;
+          font-size: 0.9rem;
           font-weight: 600;
           letter-spacing: -0.005em;
           line-height: 1.3;
@@ -303,7 +303,7 @@ export default function Header() {
         }
         .hdr-dd-item:hover .hdr-dd-lbl { color: var(--blue-dark); }
         .hdr-dd-desc {
-          font-size: 0.74rem;
+          font-size: 0.8rem;
           line-height: 1.5;
           font-weight: 400;
           color: var(--ink-3);
@@ -318,7 +318,7 @@ export default function Header() {
           justify-content: space-between;
           gap: 1rem;
         }
-        .hdr-dd-footer-text { font-size: 0.84rem; color: var(--ink-2); }
+        .hdr-dd-footer-text { font-size: 0.9rem; color: var(--ink-2); }
         .hdr-dd-footer-text strong {
           font-family: var(--font-display);
           font-weight: 600;
@@ -330,7 +330,7 @@ export default function Header() {
           align-items: center;
           gap: 6px;
           font-family: var(--font-display);
-          font-size: 0.82rem;
+          font-size: 0.9rem;
           font-weight: 600;
           letter-spacing: -0.005em;
           color: var(--blue-dark);
@@ -351,10 +351,10 @@ export default function Header() {
           align-items: center;
           background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
           color: #fff;
-          padding: 10px 22px;
+          padding: 8px 18px;
           border-radius: 9999px;
           font-family: var(--font-display);
-          font-size: 0.8rem;
+          font-size: 0.85rem;
           font-weight: 600;
           letter-spacing: -0.005em;
           text-decoration: none;
