@@ -94,7 +94,7 @@ export default function StructuredCablingPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://20659463.fs1.hubspotusercontent-na1.net/hubfs/20659463/Best%20Practices%20for%20Regular%20Data%20Center%20Cleaning%20and%20Maintenance%20-%20Featured%20Image%20-%201200x700.png');
+          background-image: url('https://www.onnecgroup.com/app/uploads/2025/02/Image-bank-2024-2.jpg');
           background-size: cover;
           background-position: center;
           opacity: 0.35;
