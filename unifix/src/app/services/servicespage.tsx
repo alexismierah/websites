@@ -129,19 +129,6 @@ export default function ServicesPage() {
           transform: translateY(-2px);
         }
 
-        .sp-row::before {
-          content: '';
-          position: absolute;
-          left: 0; top: 0; bottom: 0;
-          width: 3px;
-          background: var(--blue);
-          transform: scaleY(0);
-          transform-origin: center;
-          transition: transform 0.25s ease;
-          border-radius: 3px 0 0 3px;
-        }
-        .sp-row:hover::before { transform: scaleY(1); }
-
         .sp-row-text {
           padding: 2.75rem 3rem 2.75rem 3rem;
           display: flex;
