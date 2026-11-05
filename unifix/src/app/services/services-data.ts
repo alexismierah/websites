@@ -8,7 +8,7 @@ export const services = [
   },
   {
     name: "Cybersecurity and Network",
-    desc: "Robust enterprise networking architecture with integrated firewall, intrusion detection, and end-to-end encryption for comprehensive protection.",
+    desc: "Secure, reliable business networks with expert design, Wi-Fi, firewall configuration, access controls, and ongoing support.",
     tag: "Network",
     href: "/services/cybersecurity-and-network",
     img: "https://www.hotbot.com/articles/wp-content/uploads/2025/11/top-networking-equipment-in-2025-best-routers-switches-access-points-jw-scaled.jpeg",

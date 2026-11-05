@@ -8,10 +8,10 @@ const features = [
     desc: "Professional installation of ceiling, wall, or outdoor speakers with multiple zone options. Analog systems provide straightforward, reliable audio for smaller setups, while IP-based systems allow scalable, networked coverage and remote management.",
     icon: (
       <svg width="23" height="23" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="6" width="28" height="36" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <circle cx="24" cy="15" r="3" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="30" r="7" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="30" r="2" fill="currentColor"/>
+        <rect x="10" y="6" width="28" height="36" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <circle cx="24" cy="15" r="3" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="30" r="7" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="30" r="2" fill="currentColor" />
       </svg>
     ),
   },
@@ -20,11 +20,11 @@ const features = [
     desc: "Integration of analog or digital amplifiers, mixers, and control units to maintain consistent sound quality. IP-based systems allow remote volume adjustments and configuration via software, while analog setups provide simple, hands-on control.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="14" width="36" height="20" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <circle cx="15" cy="24" r="3" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="26" cy="24" r="3" stroke="currentColor" strokeWidth="3"/>
-        <line x1="34" y1="21" x2="38" y2="21" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="34" y1="27" x2="38" y2="27" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="6" y="14" width="36" height="20" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <circle cx="15" cy="24" r="3" stroke="currentColor" strokeWidth="3" />
+        <circle cx="26" cy="24" r="3" stroke="currentColor" strokeWidth="3" />
+        <line x1="34" y1="21" x2="38" y2="21" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="34" y1="27" x2="38" y2="27" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -33,11 +33,11 @@ const features = [
     desc: "Option to schedule announcements or automate recurring messages across multiple zones. IP systems allow centralized management, ideal for large campuses or multi-building setups, while analog systems work for straightforward, on-site paging needs.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="10" width="32" height="30" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <line x1="8" y1="20" x2="40" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="16" y1="6" x2="16" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="32" y1="6" x2="32" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="24" cy="30" r="3" fill="currentColor"/>
+        <rect x="8" y="10" width="32" height="30" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <line x1="8" y1="20" x2="40" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="16" y1="6" x2="16" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="32" y1="6" x2="32" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="24" cy="30" r="3" fill="currentColor" />
       </svg>
     ),
   },
@@ -162,8 +162,8 @@ export default function PublicAddressSystemPage() {
           <div className="sc-hero-inner">
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" opacity="0">
-                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <circle cx="12" cy="12" r="3" fill="currentColor" />
               </svg>
             </div>
             <h1 className="sc-hero-h1">Public Address System</h1>

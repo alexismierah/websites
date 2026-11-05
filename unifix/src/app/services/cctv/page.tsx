@@ -9,13 +9,13 @@ const features = [
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g transform="translate(0, 8)">
-          <path d="M12 6H36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-          <path d="M14 6V9H34V6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M8 22C8 13.1634 15.1634 6 24 6C32.8366 6 40 13.1634 40 22V26H8V22Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-          <circle cx="24" cy="18" r="4" stroke="currentColor" strokeWidth="3"/>
-          <circle cx="24" cy="18" r="1" fill="currentColor"/>
+          <path d="M12 6H36" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+          <path d="M14 6V9H34V6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M8 22C8 13.1634 15.1634 6 24 6C32.8366 6 40 13.1634 40 22V26H8V22Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+          <circle cx="24" cy="18" r="4" stroke="currentColor" strokeWidth="3" />
+          <circle cx="24" cy="18" r="1" fill="currentColor" />
         </g>
-    </svg>
+      </svg>
     ),
   },
   {
@@ -23,10 +23,10 @@ const features = [
     desc: "Configuration of DVR or NVR systems that allow live viewing from mobile devices or computers. Monitor your property in real-time, whether you’re on-site or off-site.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="10" width="32" height="24" rx="3" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M12 14H36V28H12V14Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M20 34L18 38H30L28 34H20Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M16 38H32" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="8" y="10" width="32" height="24" rx="3" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M12 14H36V28H12V14Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M20 34L18 38H30L28 34H20Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M16 38H32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -35,10 +35,10 @@ const features = [
     desc: "Installation of cameras with infrared capabilities and motion detection features to capture clear footage in low-light conditions or detect unusual activity automatically.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="14" width="28" height="14" rx="2" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="17" cy="21" r="3" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="31" cy="21" r="3" stroke="currentColor" strokeWidth="3"/>
-        <path d="M6 21H9M39 21H42" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="10" y="14" width="28" height="14" rx="2" stroke="currentColor" strokeWidth="3" />
+        <circle cx="17" cy="21" r="3" stroke="currentColor" strokeWidth="3" />
+        <circle cx="31" cy="21" r="3" stroke="currentColor" strokeWidth="3" />
+        <path d="M6 21H9M39 21H42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -47,8 +47,8 @@ const features = [
     desc: "Secure storage of video footage with scheduled recording, continuous recording, or motion-triggered capture. Ensures easy playback for incident review, investigations, or compliance purposes.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M9 11l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M11 2.5a9.5 9.5 0 00-6.5 2.3A9.55 9.55 0 002 9c0 4.42 3.02 8.14 7.12 9.2a9.5 9.5 0 001.88.28C15.97 18.48 20 14.64 20 9c0-.82-.1-1.62-.3-2.38A9.5 9.5 0 0011 2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+        <path d="M9 11l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M11 2.5a9.5 9.5 0 00-6.5 2.3A9.55 9.55 0 002 9c0 4.42 3.02 8.14 7.12 9.2a9.5 9.5 0 001.88.28C15.97 18.48 20 14.64 20 9c0-.82-.1-1.62-.3-2.38A9.5 9.5 0 0011 2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
       </svg>
     ),
   },
@@ -275,8 +275,8 @@ export default function CCTVSurveillanceSystemPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0">
-                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <circle cx="12" cy="12" r="3" fill="currentColor" />
               </svg>
             </div>
 

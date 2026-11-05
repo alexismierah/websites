@@ -8,14 +8,14 @@ const features = [
     desc: "Setup of LED panels for indoor displays or weatherproof outdoor screens. Designed for high visibility, durability, and continuous operation in various environments.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="12" width="36" height="24" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M14 18H20V24H14V18ZM14 24H20V30H14V24Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <circle cx="28" cy="18" r="1.5" fill="currentColor"/>
-        <circle cx="34" cy="18" r="1.5" fill="currentColor"/>
-        <circle cx="28" cy="24" r="1.5" fill="currentColor"/>
-        <circle cx="34" cy="24" r="1.5" fill="currentColor"/>
-        <circle cx="28" cy="30" r="1.5" fill="currentColor"/>
-        <circle cx="34" cy="30" r="1.5" fill="currentColor"/>
+        <rect x="6" y="12" width="36" height="24" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M14 18H20V24H14V18ZM14 24H20V30H14V24Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <circle cx="28" cy="18" r="1.5" fill="currentColor" />
+        <circle cx="34" cy="18" r="1.5" fill="currentColor" />
+        <circle cx="28" cy="24" r="1.5" fill="currentColor" />
+        <circle cx="34" cy="24" r="1.5" fill="currentColor" />
+        <circle cx="28" cy="30" r="1.5" fill="currentColor" />
+        <circle cx="34" cy="30" r="1.5" fill="currentColor" />
       </svg>
     ),
   },
@@ -24,10 +24,10 @@ const features = [
     desc: "Configuration of systems for advertisements, announcements, menus, or real-time information. Content can be updated easily through USB, network, or cloud-based platforms.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="14" y="4" width="20" height="36" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <rect x="18" y="8" width="12" height="20" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <line x1="20" y1="34" x2="28" y2="34" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="10" y1="44" x2="38" y2="44" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="14" y="4" width="20" height="36" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <rect x="18" y="8" width="12" height="20" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <line x1="20" y1="34" x2="28" y2="34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="10" y1="44" x2="38" y2="44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -36,10 +36,10 @@ const features = [
     desc: "Design of seamless LED video walls for large-scale displays in lobbies, control rooms, or event spaces, delivering high-impact visuals and flexible screen sizes.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M36 12L28 20M36 12C38 14 38 17 36 19C34 21 31 21 29 19L23 13C21 11 21 8 23 6C25 4 28 4 30 6L36 12Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <rect x="8" y="28" width="12" height="14" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <line x1="16" y1="28" x2="24" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="24" cy="24" r="2" fill="currentColor"/>
+        <path d="M36 12L28 20M36 12C38 14 38 17 36 19C34 21 31 21 29 19L23 13C21 11 21 8 23 6C25 4 28 4 30 6L36 12Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="8" y="28" width="12" height="14" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <line x1="16" y1="28" x2="24" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="24" cy="24" r="2" fill="currentColor" />
       </svg>
     ),
   },
@@ -164,7 +164,7 @@ export default function AudioVisualPage() {
           <div className="sc-hero-inner">
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" opacity="0">
-                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
               </svg>
             </div>
             <h1 className="sc-hero-h1">Audio Visual System</h1>

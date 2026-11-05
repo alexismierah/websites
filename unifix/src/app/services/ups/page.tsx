@@ -8,8 +8,8 @@ const features = [
     desc: "Provision and setup of UPS units sized according to your load requirements, ensuring proper backup support for computers, servers, and essential systems.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22 14L14 26H20V34L28 22H22V14Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
+        <path d="M22 14L14 26H20V34L28 22H22V14Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -18,10 +18,10 @@ const features = [
     desc: "Delivers instant backup power during outages while protecting devices from voltage fluctuations, surges, and power disturbances.",
     icon: (
       <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="14" width="32" height="22" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M16 14V8H32V14" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <line x1="14" y1="21" x2="34" y2="21" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="14" y1="28" x2="34" y2="28" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="8" y="14" width="32" height="22" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M16 14V8H32V14" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="14" y1="21" x2="34" y2="21" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="14" y1="28" x2="34" y2="28" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -29,12 +29,12 @@ const features = [
     title: "Maintenance & Battery Management",
     desc: "Regular inspection, battery testing, and replacement to ensure the UPS system remains reliable and ready when needed.",
     icon: (
-     <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 14V34C30 35.1 29.1 36 28 36H6C4.9 36 4 35.1 4 34V14C4 12.9 4.9 12 6 12H28C29.1 12 30 12.9 30 14Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-      <path d="M30 18H34V28H30" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="36" cy="34" r="5" stroke="currentColor" strokeWidth="3"/>
-      <circle cx="36" cy="34" r="1.5" fill="currentColor"/>
-    </svg>
+      <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 14V34C30 35.1 29.1 36 28 36H6C4.9 36 4 35.1 4 34V14C4 12.9 4.9 12 6 12H28C29.1 12 30 12.9 30 14Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M30 18H34V28H30" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="36" cy="34" r="5" stroke="currentColor" strokeWidth="3" />
+        <circle cx="36" cy="34" r="1.5" fill="currentColor" />
+      </svg>
     ),
   },
 
@@ -261,8 +261,8 @@ export default function UPSPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0"
->               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor"/>
+              >               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor" />
               </svg>
             </div>
 

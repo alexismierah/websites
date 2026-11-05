@@ -12,7 +12,7 @@ type Service = {
 
 const serviceLinks: Service[] = [
   { href: "/services/structured-cabling", label: "Structured Network Cabling", category: "Infrastructure", desc: "Fiber and copper cabling built to standard" },
-  { href: "/services/cybersecurity-and-network", label: "Cybersecurity and Network", category: "Infrastructure", desc: "Switching, Wi-Fi, firewalls and protection" },
+  { href: "/services/cybersecurity-and-network", label: "Cybersecurity and Network", category: "Infrastructure", desc: "Secure networks, Wi-Fi, firewalls and support" },
   { href: "/services/server-cloud",       label: "Server & Cloud",             category: "Infrastructure", desc: "On-site servers, hosting and cloud migration" },
   { href: "/services/cctv",               label: "CCTV & Surveillance",        category: "Security",       desc: "Cameras and recording you can watch remotely" },
   { href: "/services/access-control",     label: "Access Control System",      category: "Security",       desc: "Card, PIN and biometric door entry" },

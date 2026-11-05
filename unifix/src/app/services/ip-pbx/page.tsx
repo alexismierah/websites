@@ -8,9 +8,9 @@ const features = [
     desc: "Installation of IP phones with high-definition voice, multiple extensions, and easy handoff between lines for smooth internal and external communication.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 32C10 26 14 24 24 24C34 24 38 26 38 32V38C38 40 37 41 35 41H13C11 41 10 40 10 38V32Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M8 18C8 12 14 8 24 8C34 8 40 12 40 18V22H34V18C34 16 30 14 24 14C18 14 14 16 14 18V22H8V18Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="24" cy="33" r="3" stroke="currentColor" strokeWidth="3"/>
+        <path d="M10 32C10 26 14 24 24 24C34 24 38 26 38 32V38C38 40 37 41 35 41H13C11 41 10 40 10 38V32Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M8 18C8 12 14 8 24 8C34 8 40 12 40 18V22H34V18C34 16 30 14 24 14C18 14 14 16 14 18V22H8V18Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="24" cy="33" r="3" stroke="currentColor" strokeWidth="3" />
       </svg>
     ),
   },
@@ -19,9 +19,9 @@ const features = [
     desc: "Configuration of call forwarding, auto-attendant, and extension routing to direct calls efficiently and reduce wait times.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 32C10 26 14 24 24 24C34 24 38 26 38 32V38C38 40 37 41 35 41H13C11 41 10 40 10 38V32Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M8 14C8 8 14 4 24 4C34 4 40 8 40 14V18H34V14C34 12 30 10 24 10C18 10 14 12 14 14V18H8V14Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M4 20C2 17 2 13 4 10M44 20C46 17 46 13 44 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M10 32C10 26 14 24 24 24C34 24 38 26 38 32V38C38 40 37 41 35 41H13C11 41 10 40 10 38V32Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M8 14C8 8 14 4 24 4C34 4 40 8 40 14V18H34V14C34 12 30 10 24 10C18 10 14 12 14 14V18H8V14Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M4 20C2 17 2 13 4 10M44 20C46 17 46 13 44 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -30,10 +30,10 @@ const features = [
     desc: "Setup of personalized voicemail, message alerts, and optional call recording to help track communications and ensure no important call is missed.",
     icon: (
       <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="14" width="32" height="20" rx="2" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="17" cy="24" r="4" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="31" cy="24" r="4" stroke="currentColor" strokeWidth="3"/>
-        <path d="M17 28H31" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="8" y="14" width="32" height="20" rx="2" stroke="currentColor" strokeWidth="3" />
+        <circle cx="17" cy="24" r="4" stroke="currentColor" strokeWidth="3" />
+        <circle cx="31" cy="24" r="4" stroke="currentColor" strokeWidth="3" />
+        <path d="M17 28H31" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -42,15 +42,15 @@ const features = [
     desc: "Connects with existing network infrastructure, allowing remote access, multi-site connectivity, and easy future upgrades as your communication needs grow.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="16" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="24" r="5" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="14" r="2" fill="currentColor"/>
-        <circle cx="32" cy="18" r="2" fill="currentColor"/>
-        <circle cx="34" cy="26" r="2" fill="currentColor"/>
-        <circle cx="29" cy="33" r="2" fill="currentColor"/>
-        <circle cx="19" cy="33" r="2" fill="currentColor"/>
-        <circle cx="14" cy="26" r="2" fill="currentColor"/>
-        <circle cx="16" cy="18" r="2" fill="currentColor"/>
+        <circle cx="24" cy="24" r="16" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="24" r="5" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="14" r="2" fill="currentColor" />
+        <circle cx="32" cy="18" r="2" fill="currentColor" />
+        <circle cx="34" cy="26" r="2" fill="currentColor" />
+        <circle cx="29" cy="33" r="2" fill="currentColor" />
+        <circle cx="19" cy="33" r="2" fill="currentColor" />
+        <circle cx="14" cy="26" r="2" fill="currentColor" />
+        <circle cx="16" cy="18" r="2" fill="currentColor" />
       </svg>
     ),
   },
@@ -175,7 +175,7 @@ export default function IPPBXSystemPage() {
           <div className="sc-hero-inner">
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" opacity="0">
-                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
               </svg>
             </div>
             <h1 className="sc-hero-h1">UC / IP-PBX Telephone System</h1>

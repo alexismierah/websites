@@ -8,9 +8,9 @@ const features = [
     desc: "Installation of outdoor camera units and indoor display monitors for clear video and audio communication with visitors before granting access.",
     icon: (
       <svg width="21" height="21" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 42V6C10 4.89543 10.8954 4 12 4H36C37.1046 4 38 4.89543 38 6V42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <line x1="6" y1="42" x2="42" y2="42" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="32" cy="24" r="2" fill="currentColor"/>
+        <path d="M10 42V6C10 4.89543 10.8954 4 12 4H36C37.1046 4 38 4.89543 38 6V42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="6" y1="42" x2="42" y2="42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="32" cy="24" r="2" fill="currentColor" />
       </svg>
     ),
   },
@@ -19,10 +19,10 @@ const features = [
     desc: "Enables real-time conversation and visual verification, improving security by allowing users to identify visitors before entry.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="16" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M28 20L40 14V34L28 28V20Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="13" cy="11" r="5" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="23" cy="11" r="5" stroke="currentColor" strokeWidth="3"/>
+        <rect x="8" y="16" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M28 20L40 14V34L28 28V20Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="13" cy="11" r="5" stroke="currentColor" strokeWidth="3" />
+        <circle cx="23" cy="11" r="5" stroke="currentColor" strokeWidth="3" />
       </svg>
     ),
   },
@@ -31,10 +31,10 @@ const features = [
     desc: "Systems can be connected to mobile devices, allowing users to view, communicate, and unlock doors remotely from anywhere.",
     icon: (
       <svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="12" y="4" width="24" height="40" rx="4" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M12 10H36V36H12V10Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <line x1="20" y1="7" x2="28" y2="7" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="24" cy="40" r="2" stroke="currentColor" strokeWidth="3"/>
+        <rect x="12" y="4" width="24" height="40" rx="4" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M12 10H36V36H12V10Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <line x1="20" y1="7" x2="28" y2="7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="24" cy="40" r="2" stroke="currentColor" strokeWidth="3" />
       </svg>
     ),
   },
@@ -43,10 +43,10 @@ const features = [
     desc: "Integration with door locks, gates, or access control systems for secure and convenient entry management.",
     icon: (
       <svg width="23" height="23" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="22" width="28" height="20" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M16 22V14C16 9.58172 19.5817 6 24 6C28.4183 6 32 9.58172 32 14V22" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="24" cy="31" r="3" stroke="currentColor" strokeWidth="3"/>
-        <line x1="24" y1="34" x2="24" y2="37" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="10" y="22" width="28" height="20" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M16 22V14C16 9.58172 19.5817 6 24 6C28.4183 6 32 9.58172 32 14V22" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="24" cy="31" r="3" stroke="currentColor" strokeWidth="3" />
+        <line x1="24" y1="34" x2="24" y2="37" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -273,8 +273,8 @@ export default function NetworkSecurityPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0"
->               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor"/>
+              >               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor" />
               </svg>
             </div>
 

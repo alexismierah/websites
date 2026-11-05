@@ -8,10 +8,10 @@ const features = [
     desc: "Installation of fingerprint and facial recognition systems to secure entry points and restrict access to authorized users. Supports contactless authentication and configurable access levels for different users.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 24C12 12 36 12 44 24C36 36 12 36 4 24Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="24" cy="24" r="8" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="24" r="4" fill="currentColor"/>
-        <path d="M24 16v-4M24 32v4M16 24h-4M32 24h4M17 17l-2-2M31 31l2 2M17 31l-2 2M31 17l2-2" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M4 24C12 12 36 12 44 24C36 36 12 36 4 24Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="24" cy="24" r="8" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="24" r="4" fill="currentColor" />
+        <path d="M24 16v-4M24 32v4M16 24h-4M32 24h4M17 17l-2-2M31 31l2 2M17 31l-2 2M31 17l2-2" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -20,9 +20,9 @@ const features = [
     desc: "Installation of RFID and card-based entry systems for controlled and trackable access. Allows easy assignment or removal of access with entry logs for monitoring.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="12" width="36" height="24" rx="4" stroke="currentColor" strokeWidth="3"/>
-        <line x1="14" y1="24" x2="34" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="36" cy="24" r="2" fill="currentColor"/>
+        <rect x="6" y="12" width="36" height="24" rx="4" stroke="currentColor" strokeWidth="3" />
+        <line x1="14" y1="24" x2="34" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="36" cy="24" r="2" fill="currentColor" />
       </svg>
     ),
   },
@@ -31,12 +31,12 @@ const features = [
     desc: "Installation of automated boom barriers for vehicle access control in parking areas, subdivisions, and secured premises. Can be integrated with card access, remotes, or license plate recognition systems.",
     icon: (
       <svg width="27" height="27" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="18" width="28" height="14" rx="2" stroke="currentColor" strokeWidth="3"/>
-        <path d="M12 18L16 12H32L36 18" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="12" cy="25" r="2" fill="currentColor"/>
-        <circle cx="36" cy="25" r="2" fill="currentColor"/>
-        <circle cx="16" cy="32" r="3" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="32" cy="32" r="3" stroke="currentColor" strokeWidth="3"/>
+        <rect x="10" y="18" width="28" height="14" rx="2" stroke="currentColor" strokeWidth="3" />
+        <path d="M12 18L16 12H32L36 18" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="12" cy="25" r="2" fill="currentColor" />
+        <circle cx="36" cy="25" r="2" fill="currentColor" />
+        <circle cx="16" cy="32" r="3" stroke="currentColor" strokeWidth="3" />
+        <circle cx="32" cy="32" r="3" stroke="currentColor" strokeWidth="3" />
       </svg>
     ),
   },
@@ -45,10 +45,10 @@ const features = [
     desc: "Setup of integrated time-in and time-out monitoring using biometric or card-based systems. Captures employee attendance data in real time, with logs for tracking, reporting, and payroll support.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="10" width="36" height="32" rx="4" stroke="currentColor" strokeWidth="3"/>
-        <line x1="6" y1="18" x2="42" y2="18" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="28" r="6" stroke="currentColor" strokeWidth="3"/>
-        <path d="M21 28l2 2 4-4" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="6" y="10" width="36" height="32" rx="4" stroke="currentColor" strokeWidth="3" />
+        <line x1="6" y1="18" x2="42" y2="18" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="28" r="6" stroke="currentColor" strokeWidth="3" />
+        <path d="M21 28l2 2 4-4" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -285,8 +285,8 @@ export default function AccessControlSystemPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0">
-                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor"/>
+                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor" />
               </svg>
             </div>
 

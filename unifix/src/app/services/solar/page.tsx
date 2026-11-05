@@ -8,15 +8,15 @@ const features = [
     desc: "Installation of high-efficiency solar panels positioned for maximum sunlight exposure, ensuring optimal energy generation throughout the day.",
     icon: (
       <svg width="23" height="23" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="9" stroke="currentColor" strokeWidth="3"/>
-        <line x1="24" y1="5" x2="24" y2="10" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="24" y1="38" x2="24" y2="43" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="5" y1="24" x2="10" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="38" y1="24" x2="43" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="34" y1="34" x2="37.5" y2="37.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="34" y1="14" x2="37.5" y2="10.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="10.5" y1="37.5" x2="14" y2="34" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <circle cx="24" cy="24" r="9" stroke="currentColor" strokeWidth="3" />
+        <line x1="24" y1="5" x2="24" y2="10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="24" y1="38" x2="24" y2="43" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="5" y1="24" x2="10" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="38" y1="24" x2="43" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="34" y1="34" x2="37.5" y2="37.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="34" y1="14" x2="37.5" y2="10.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="10.5" y1="37.5" x2="14" y2="34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -25,8 +25,8 @@ const features = [
     desc: "Setup of inverters and control systems to convert solar energy into usable electricity, with monitoring for performance and efficiency",
     icon: (
       <svg width="21" height="21" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="3"/>
-        <path d="M26 10L16 26H24L22 38L32 22H24L26 10Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="3" />
+        <path d="M26 10L16 26H24L22 38L32 22H24L26 10Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -35,11 +35,11 @@ const features = [
     desc: "Optional battery systems store excess energy for use during nighttime or power outages, ensuring continuous power supply.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="14" width="24" height="24" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M34 20V32H37C38.1046 32 39 31.1046 39 30V22C39 20.8954 38.1046 20 37 20H34Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <line x1="16" y1="20" x2="16" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="22" y1="20" x2="22" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="28" y1="20" x2="28" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="10" y="14" width="24" height="24" rx="2" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M34 20V32H37C38.1046 32 39 31.1046 39 30V22C39 20.8954 38.1046 20 37 20H34Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <line x1="16" y1="20" x2="16" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="22" y1="20" x2="22" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="28" y1="20" x2="28" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -47,12 +47,12 @@ const features = [
     title: "Monitoring & Maintenance",
     desc: "Monitoring of energy production and system performance, with maintenance support to ensure long-term reliability and efficiency.",
     icon: (
-     <svg width="27" height="27" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M34.5 13.5C37.5 16.5 37.5 21.5 34.5 24.5L30 29L19 18L23.5 13.5C26.5 10.5 31.5 10.5 34.5 13.5Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M24 13L28 17M15 22L12 25" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-      <path d="M19 18L8 29C6 31 6 34 8 36C10 38 13 38 15 36L26 25" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="11.5" cy="32.5" r="1.5" fill="currentColor"/>
-    </svg>
+      <svg width="27" height="27" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34.5 13.5C37.5 16.5 37.5 21.5 34.5 24.5L30 29L19 18L23.5 13.5C26.5 10.5 31.5 10.5 34.5 13.5Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M24 13L28 17M15 22L12 25" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <path d="M19 18L8 29C6 31 6 34 8 36C10 38 13 38 15 36L26 25" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="11.5" cy="32.5" r="1.5" fill="currentColor" />
+      </svg>
     ),
   },
 ]
@@ -278,8 +278,8 @@ export default function SolarPowerPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0"
->               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor"/>
+              >               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor" />
               </svg>
             </div>
 

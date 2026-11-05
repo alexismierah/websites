@@ -8,14 +8,14 @@ const features = [
     desc: "Design and implementation of a complete cabling system that integrates data, voice, and security devices — including computers, IP phones, CCTV, and access control systems — into one reliable infrastructure.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <rect x="2" y="9" width="18" height="4" rx="2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="6" cy="11" r="1.2" fill="currentColor"/>
-        <circle cx="11" cy="11" r="1.2" fill="currentColor"/>
-        <circle cx="16" cy="11" r="1.2" fill="currentColor"/>
-        <line x1="6" y1="9" x2="6" y2="5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="16" y1="9" x2="16" y2="5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="6" y1="13" x2="6" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="16" y1="13" x2="16" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="2" y="9" width="18" height="4" rx="2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="6" cy="11" r="1.2" fill="currentColor" />
+        <circle cx="11" cy="11" r="1.2" fill="currentColor" />
+        <circle cx="16" cy="11" r="1.2" fill="currentColor" />
+        <line x1="6" y1="9" x2="6" y2="5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="16" y1="9" x2="16" y2="5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="6" y1="13" x2="6" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="16" y1="13" x2="16" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -24,11 +24,11 @@ const features = [
     desc: "Neat, labelled patch panels, managed cable trays, and rack installations to ensure a clean, efficient, and easily maintainable network environment.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <rect x="3" y="6" width="16" height="10" rx="2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <line x1="7.5" y1="6" x2="7.5" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.5"/>
-        <line x1="11" y1="6" x2="11" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.5"/>
-        <line x1="14.5" y1="6" x2="14.5" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.5"/>
-        <circle cx="11" cy="18.5" r="1" fill="currentColor"/>
+        <rect x="3" y="6" width="16" height="10" rx="2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="7.5" y1="6" x2="7.5" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+        <line x1="11" y1="6" x2="11" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+        <line x1="14.5" y1="6" x2="14.5" y2="16" stroke="currentColor" strokeWidth="1" opacity="0.5" />
+        <circle cx="11" cy="18.5" r="1" fill="currentColor" />
       </svg>
     ),
   },
@@ -37,12 +37,12 @@ const features = [
     desc: "Deployment of premium copper and fiber optic cabling to deliver stable, high-speed connectivity for all network requirements.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="1.5"/>
-        <circle cx="11" cy="11" r="3" stroke="currentColor" strokeWidth="1.5"/>
-        <line x1="11" y1="3" x2="11" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="11" y1="14" x2="11" y2="19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="3" y1="11" x2="8" y2="11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="14" y1="11" x2="19" y2="11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="11" cy="11" r="3" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="11" y1="3" x2="11" y2="8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="11" y1="14" x2="11" y2="19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="3" y1="11" x2="8" y2="11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="14" y1="11" x2="19" y2="11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -51,8 +51,8 @@ const features = [
     desc: "Every link tested with Fluke Tester to validate continuity, signal integrity, and proper configuration, ensuring optimal performance and long-term reliability.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M9 11l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M11 2.5a9.5 9.5 0 00-6.5 2.3A9.55 9.55 0 002 9c0 4.42 3.02 8.14 7.12 9.2a9.5 9.5 0 001.88.28C15.97 18.48 20 14.64 20 9c0-.82-.1-1.62-.3-2.38A9.5 9.5 0 0011 2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+        <path d="M9 11l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M11 2.5a9.5 9.5 0 00-6.5 2.3A9.55 9.55 0 002 9c0 4.42 3.02 8.14 7.12 9.2a9.5 9.5 0 001.88.28C15.97 18.48 20 14.64 20 9c0-.82-.1-1.62-.3-2.38A9.5 9.5 0 0011 2.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
       </svg>
     ),
   },
@@ -277,19 +277,19 @@ export default function StructuredCablingPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0">
-                <rect x="8" y="22" width="36" height="8" rx="4" stroke="currentColor" strokeWidth="1.8"/>
-                <rect x="14" y="10" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8"/>
-                <rect x="30" y="10" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8"/>
-                <rect x="14" y="30" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8"/>
-                <rect x="30" y="30" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8"/>
-                <circle cx="18" cy="16" r="2.5" fill="currentColor"/>
-                <circle cx="34" cy="16" r="2.5" fill="currentColor"/>
-                <circle cx="18" cy="36" r="2.5" fill="currentColor"/>
-                <circle cx="34" cy="36" r="2.5" fill="currentColor"/>
-                <line x1="18" y1="26" x2="18" y2="30" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2"/>
-                <line x1="34" y1="26" x2="34" y2="30" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2"/>
-                <line x1="18" y1="22" x2="18" y2="16" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2"/>
-                <line x1="34" y1="22" x2="34" y2="16" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2"/>
+                <rect x="8" y="22" width="36" height="8" rx="4" stroke="currentColor" strokeWidth="1.8" />
+                <rect x="14" y="10" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8" />
+                <rect x="30" y="10" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8" />
+                <rect x="14" y="30" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8" />
+                <rect x="30" y="30" width="8" height="12" rx="3" stroke="currentColor" strokeWidth="1.8" />
+                <circle cx="18" cy="16" r="2.5" fill="currentColor" />
+                <circle cx="34" cy="16" r="2.5" fill="currentColor" />
+                <circle cx="18" cy="36" r="2.5" fill="currentColor" />
+                <circle cx="34" cy="36" r="2.5" fill="currentColor" />
+                <line x1="18" y1="26" x2="18" y2="30" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
+                <line x1="34" y1="26" x2="34" y2="30" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
+                <line x1="18" y1="22" x2="18" y2="16" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
+                <line x1="34" y1="22" x2="34" y2="16" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
               </svg>
             </div>
 

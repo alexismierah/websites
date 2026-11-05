@@ -8,9 +8,9 @@ const features = [
     desc: "Design, deployment, and optimization of physical and virtual server environments to support critical business workloads with performance and reliability in mind.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="14" width="32" height="20" rx="3" stroke="currentColor" strokeWidth="3"/>
-        <path d="M16 20H32M16 28H28" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M24 34V42M18 42H30" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="8" y="14" width="32" height="20" rx="3" stroke="currentColor" strokeWidth="3" />
+        <path d="M16 20H32M16 28H28" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <path d="M24 34V42M18 42H30" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -19,8 +19,8 @@ const features = [
     desc: "Seamless transition of your applications, data, and business processes to secure cloud platforms with minimal downtime and strong governance.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 34C9.5 34 5 29.5 5 24C5 19 8.5 15 13.5 14.5C15.2 10 19.3 7 24 7C30.6 7 36 12.4 36 19C39.3 19.4 42 22.3 42 26C42 30.1 38.6 33.5 34.5 33.5H15Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M24 22V30M20 26H28" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M15 34C9.5 34 5 29.5 5 24C5 19 8.5 15 13.5 14.5C15.2 10 19.3 7 24 7C30.6 7 36 12.4 36 19C39.3 19.4 42 22.3 42 26C42 30.1 38.6 33.5 34.5 33.5H15Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M24 22V30M20 26H28" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -29,10 +29,10 @@ const features = [
     desc: "Smart virtualization strategies and backup systems that improve utilization, reduce hardware overhead, and protect your organization from data loss.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="12" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="3"/>
-        <rect x="26" y="12" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="3"/>
-        <rect x="26" y="26" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="3"/>
-        <path d="M22 19H26M22 29H26" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="8" y="12" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="3" />
+        <rect x="26" y="12" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="3" />
+        <rect x="26" y="26" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="3" />
+        <path d="M22 19H26M22 29H26" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -41,8 +41,8 @@ const features = [
     desc: "Continuous monitoring, maintenance, and technical support to keep your infrastructure stable, secure, and ready for growth as your business evolves.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 8V18M24 40V22M8 24H18M30 24H40" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="24" cy="24" r="8" stroke="currentColor" strokeWidth="3"/>
+        <path d="M24 8V18M24 40V22M8 24H18M30 24H40" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="24" cy="24" r="8" stroke="currentColor" strokeWidth="3" />
       </svg>
     ),
   },

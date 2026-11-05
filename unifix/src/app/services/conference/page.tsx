@@ -8,11 +8,11 @@ const features = [
     desc: "Installation of table, ceiling, or wireless microphones and high-quality speakers to provide balanced sound coverage throughout the room. Systems are designed to reduce feedback and ensure everyone is heard clearly.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="17" y="6" width="14" height="22" rx="7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <line x1="17" y1="16" x2="31" y2="16" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M12 24C12 30.6274 17.3726 36 24 36C30.6274 36 36 30.6274 36 24" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="24" y1="36" x2="24" y2="42" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <line x1="16" y1="42" x2="32" y2="42" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="17" y="6" width="14" height="22" rx="7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="17" y1="16" x2="31" y2="16" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <path d="M12 24C12 30.6274 17.3726 36 24 36C30.6274 36 36 30.6274 36 24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="24" y1="36" x2="24" y2="42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <line x1="16" y1="42" x2="32" y2="42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -21,12 +21,12 @@ const features = [
     desc: "Centralized control panels or software provide easy management of microphones, speakers, and input sources. Features include muting, volume adjustment, and source switching to make meetings organized and professional.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="14" y1="10" x2="14" y2="38" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <rect x="10" y="24" width="8" height="6" rx="1" stroke="currentColor" strokeWidth="3" fill="currentColor"/>
-        <line x1="24" y1="10" x2="24" y2="38" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <rect x="20" y="14" width="8" height="6" rx="1" stroke="currentColor" strokeWidth="3" fill="currentColor"/>
-        <circle cx="36" cy="32" r="5" stroke="currentColor" strokeWidth="3"/>
-        <line x1="36" y1="32" x2="36" y2="28" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <line x1="14" y1="10" x2="14" y2="38" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <rect x="10" y="24" width="8" height="6" rx="1" stroke="currentColor" strokeWidth="3" fill="currentColor" />
+        <line x1="24" y1="10" x2="24" y2="38" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <rect x="20" y="14" width="8" height="6" rx="1" stroke="currentColor" strokeWidth="3" fill="currentColor" />
+        <circle cx="36" cy="32" r="5" stroke="currentColor" strokeWidth="3" />
+        <line x1="36" y1="32" x2="36" y2="28" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -35,9 +35,9 @@ const features = [
     desc: "Supports video conferencing, digital displays, and presentation setups. Systems allow real-time sharing of presentations, remote collaboration, and synchronized audio-video output for hybrid or in-person meetings.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <path d="M20 18L30 24L20 30V18Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <line x1="10" y1="34" x2="14" y2="34" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <path d="M20 18L30 24L20 30V18Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="10" y1="34" x2="14" y2="34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -264,8 +264,8 @@ export default function ConferenceSystemPage() {
 
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0"
->               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor"/>
+              >               <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                <path d="M13.1 15.5v1.5c0 .55-.45 1-1 1s-1-.45-1-1v-1.5c-.58-.58-.7-1.53-.14-2.14.58-.61 1.53-.72 2.14-.14.62.58.72 1.52.14 2.14z" fill="currentColor" />
               </svg>
             </div>
 
@@ -286,7 +286,7 @@ export default function ConferenceSystemPage() {
                 Seamless Communication, <em>every meeting</em>
               </h2>
               <p className="sc-about-p">
-                We provide conference systems for offices, boardrooms, auditoriums, and training facilities, ensuring every meeting runs smoothly and professionally. 
+                We provide conference systems for offices, boardrooms, auditoriums, and training facilities, ensuring every meeting runs smoothly and professionally.
                 Each solution is designed to support real-time collaboration and large-scale presentations, with easy control and management so your team can focus on communication, not technology.              </p>
               <div className="sc-rule" />
             </div>

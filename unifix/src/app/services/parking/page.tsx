@@ -8,9 +8,9 @@ const features = [
     desc: "Installation of bright, easy-to-read LED displays that show available parking slots in real-time. Signage can be placed at entrances, intersections, or individual zones, ensuring drivers always know where to park without wasting time searching.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M18 16H26C28.2091 16 30 17.7909 30 20C30 22.2091 28.2091 24 26 24H18V16Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round"/>
-        <line x1="18" y1="24" x2="18" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M18 16H26C28.2091 16 30 17.7909 30 20C30 22.2091 28.2091 24 26 24H18V16Z" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
+        <line x1="18" y1="24" x2="18" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -19,9 +19,9 @@ const features = [
     desc: "Deployment of ultrasonic, infrared, or camera-based sensors to detect vehicle presence in each parking slot. The system updates the LED signage automatically and can track occupancy trends for reporting.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="5" stroke="currentColor" strokeWidth="3"/>
-        <circle cx="24" cy="24" r="1" fill="currentColor"/>
-        <path d="M12.6863 12.6863C9.5621 15.8105 8 19.9052 8 24C8 28.0948 9.5621 32.1895 12.6863 35.3137M35.3137 12.6863C38.4379 15.8105 40 19.9052 40 24C40 28.0948 38.4379 32.1895 35.3137 35.3137" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <circle cx="24" cy="24" r="5" stroke="currentColor" strokeWidth="3" />
+        <circle cx="24" cy="24" r="1" fill="currentColor" />
+        <path d="M12.6863 12.6863C9.5621 15.8105 8 19.9052 8 24C8 28.0948 9.5621 32.1895 12.6863 35.3137M35.3137 12.6863C38.4379 15.8105 40 19.9052 40 24C40 28.0948 38.4379 32.1895 35.3137 35.3137" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -30,9 +30,9 @@ const features = [
     desc: "Intelligent guidance using visual indicators, arrows, or floor lights to direct drivers to free spaces quickly. Combined with signage and sensors, this ensures smooth traffic flow throughout the parking area and prevents bottlenecks.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="3"/>
-        <line x1="24" y1="36" x2="24" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M16 20L24 12L32 20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="3" />
+        <line x1="24" y1="36" x2="24" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+        <path d="M16 20L24 12L32 20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -41,8 +41,8 @@ const features = [
     desc: "Integration of automated boom barriers, RFID cards, QR codes, or token-based entry for secure vehicle access. Logs of entries and exits are maintained for security and monitoring purposes.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="3"/>
-        <line x1="12" y1="24" x2="36" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="3" />
+        <line x1="12" y1="24" x2="36" y2="24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -167,7 +167,7 @@ export default function ParkingGuidanceSystemPage() {
           <div className="sc-hero-inner">
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" opacity="0">
-                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M17 9V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2c-1.66 0-3 1.34-3 3v7c0 1.66 1.34 3 3 3h10c1.66 0 3-1.34 3-3v-7c0-1.66-1.34-3-3-3zM9 7c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V7z" stroke="currentColor" strokeWidth="1.5" fill="none" />
               </svg>
             </div>
             <h1 className="sc-hero-h1">Parking System</h1>
