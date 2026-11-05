@@ -129,6 +129,19 @@ export default function ServicesPage() {
           transform: translateY(-2px);
         }
 
+        .sp-row::before {
+          content: '';
+          position: absolute;
+          left: 0; top: 0; bottom: 0;
+          width: 3px;
+          background: var(--blue);
+          transform: scaleY(0);
+          transform-origin: center;
+          transition: transform 0.25s ease;
+          border-radius: 3px 0 0 3px;
+        }
+        .sp-row:hover::before { transform: scaleY(1); }
+
         .sp-row-text {
           padding: 2.75rem 3rem 2.75rem 3rem;
           display: flex;
@@ -136,28 +149,22 @@ export default function ServicesPage() {
           justify-content: center;
           gap: 0;
         }
-        .sp-row-meta {
+        .sp-row-heading {
           display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          margin-bottom: 1rem;
+          align-items: baseline;
+          gap: 0.875rem;
+          margin-bottom: 0.75rem;
         }
         .sp-row-num {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: 0.875rem;
+          font-size: clamp(1.25rem, 1.8vw, 1.625rem);
+          font-weight: 300;
           font-style: italic;
-          color: var(--ink-4);
-        }
-        .sp-row-tag {
-          font-size: 10px;
-          font-weight: 500;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          padding: 3px 10px;
-          border-radius: 999px;
-          border: 1px solid #bfdbfe;
-          background: #eff6ff;
-          color: #1d4ed8;
+          color: var(--blue);
+          letter-spacing: -0.06em;
+          line-height: 1;
+          font-variant-numeric: tabular-nums;
+          flex-shrink: 0;
         }
         .sp-row-name {
           font-family: 'Instrument Sans', sans-serif;
@@ -165,7 +172,7 @@ export default function ServicesPage() {
           font-weight: 400;
           line-height: 1.2;
           color: var(--ink);
-          margin-bottom: 0.75rem;
+          margin-bottom: 0;
           letter-spacing: -0.01em;
           transition: color 0.2s;
         }
@@ -303,13 +310,10 @@ export default function ServicesPage() {
             return (
               <Link key={svc.href} href={svc.href} className="sp-row">
                 <div className="sp-row-text">
-                  <div className="sp-row-meta">
+                  <div className="sp-row-heading">
                     <span className="sp-row-num">{String(i + 1).padStart(2, "0")}</span>
-                    <span className="sp-row-tag">
-                      {svc.tag}
-                    </span>
+                    <h2 className="sp-row-name">{svc.name}</h2>
                   </div>
-                  <h2 className="sp-row-name">{svc.name}</h2>
                   <p className="sp-row-desc">{svc.desc}</p>
                   <div className="sp-row-cta">
                     Explore service
