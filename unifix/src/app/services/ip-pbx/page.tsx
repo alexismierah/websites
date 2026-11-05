@@ -78,7 +78,7 @@ export default function IPPBXSystemPage() {
 
         .sc-hero-bg {
           position: absolute; inset: 0;
-          background-image: url('https://roicallcentersolutions.com/wp-content/uploads/2018/02/business-businessmen-classroom-267507.jpg');
+          background-image: url('https://www.ioephonesystem.com/storage/uploads/images/202408/20/1724121890_H3LbGqG7nO.jpg');
           background-size: cover; background-position: center;
           opacity: 0.35; width: 100%; height: 100%;
         }

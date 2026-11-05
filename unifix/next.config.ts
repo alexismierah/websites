@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com", pathname: "/photo-*" },
       { protocol: "https", hostname: "20659463.fs1.hubspotusercontent-na1.net", pathname: "/hubfs/**" },
       { protocol: "https", hostname: "www.hotbot.com", pathname: "/articles/wp-content/uploads/**" },
+      { protocol: "https", hostname: "www.onnecgroup.com", pathname: "/app/uploads/**" },
+      { protocol: "https", hostname: "www.securitastechnology.com", pathname: "/sites/securitastechnology.com/files/media/**" },
+      { protocol: "https", hostname: "media.istockphoto.com", pathname: "/id/**" },
 
       // Added for services-data
       { protocol: "https", hostname: "mds.com.om", pathname: "/wp-content/uploads/**" },

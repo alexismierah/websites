@@ -90,7 +90,7 @@ export default function AccessControlSystemPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://www.axis.com/sites/axis/files/styles/landscape_1920_x_500_jpg/public/2023-01/access_control_a4120ve_1_3840x1536_2301.jpg.webp?h=b77977af&itok=cmhMo-77');
+          background-image: url('https://inbound.usisecurity.com/hubfs/Depositphotos_33384173_l-2015-min.jpg');
           background-size: cover;
           background-position: center;
           opacity: 0.35;

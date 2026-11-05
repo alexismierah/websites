@@ -202,7 +202,7 @@ export default function NetworkSecurityPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://www.hotbot.com/articles/wp-content/uploads/2025/11/top-networking-equipment-in-2025-best-routers-switches-access-points-jw-scaled.jpeg');
+          background-image: url('https://media.istockphoto.com/id/2224913852/photo/internet-security-secure-global-data-connection-secure-data-and-network-protection-a-man-uses.jpg?b=1&s=1024x1024&w=0&k=20&c=HS_SOnwcxV73-CnrgqaE8yj65MldO2M9UTjRUushbXw=');
           background-size: cover;
           background-position: center;
           opacity: 0.35;

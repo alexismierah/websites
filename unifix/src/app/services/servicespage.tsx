@@ -3,18 +3,6 @@
 import Link from "next/link"
 import { services } from "./services-data"
 
-const tagColors: Record<string, { bg: string; color: string; border: string }> = {
-  Infrastructure: { bg: "#eff6ff",   color: "#1d4ed8", border: "#bfdbfe" },
-  Security:       { bg: "#fef2f2",   color: "#b91c1c", border: "#fecaca" },
-  Communication:  { bg: "#f0fdf4",   color: "#15803d", border: "#bbf7d0" },
-  Audio:          { bg: "#fdf4ff",   color: "#7e22ce", border: "#e9d5ff" },
-  Network:        { bg: "#eff6ff",   color: "#1d4ed8", border: "#bfdbfe" },
-  AV:             { bg: "#fff7ed",   color: "#c2410c", border: "#fed7aa" },
-  Automation:     { bg: "#f0fdfa",   color: "#0f766e", border: "#99f6e4" },
-  Energy:         { bg: "#fefce8",   color: "#a16207", border: "#fde68a" },
-  Display:        { bg: "#fdf4ff",   color: "#7e22ce", border: "#e9d5ff" },
-}
-
 export default function ServicesPage() {
   function scrollToFooter(e: React.MouseEvent<HTMLAnchorElement>) {
     e.preventDefault()
@@ -180,7 +168,9 @@ export default function ServicesPage() {
           text-transform: uppercase;
           padding: 3px 10px;
           border-radius: 999px;
-          border: 1px solid;
+          border: 1px solid #bfdbfe;
+          background: #eff6ff;
+          color: #1d4ed8;
         }
         .sp-row-name {
           font-family: 'Instrument Sans', sans-serif;
@@ -323,13 +313,12 @@ export default function ServicesPage() {
         {/* Rows */}
         <div className="sp-rows">
           {services.map((svc, i) => {
-            const c = tagColors[svc.tag] ?? tagColors["Infrastructure"]
             return (
               <Link key={svc.href} href={svc.href} className="sp-row">
                 <div className="sp-row-text">
                   <div className="sp-row-meta">
                     <span className="sp-row-num">{String(i + 1).padStart(2, "0")}</span>
-                    <span className="sp-row-tag" style={{ background: c.bg, color: c.color, borderColor: c.border }}>
+                    <span className="sp-row-tag">
                       {svc.tag}
                     </span>
                   </div>

@@ -419,6 +419,7 @@ export default function HomePage() {
                       fill
                       sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
                       className="svc-img"
+                      unoptimized={s.href === "/services/cctv"}
                     />
                   </div>
                   <div className="svc-body">

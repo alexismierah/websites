@@ -80,7 +80,7 @@ export default function ServerCloudPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+          background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80');
           background-size: cover;
           background-position: center;
           opacity: 0.35;

@@ -94,7 +94,7 @@ export default function CCTVSurveillanceSystemPage() {
           background-size: cover;
           background-position: center;
           opacity: 0.35;
-          width: 100%;
+          width: 100%;s
           height: 100%;
         }
 
