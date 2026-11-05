@@ -358,7 +358,7 @@ export default function ServicesPage() {
         <section className="sp-cta">
           <div className="sp-cta-glow" />
           <h2>Not sure what you <em>need?</em></h2>
-          <p>Talk to our team — we'll recommend the right solution for your business.</p>
+          <p>Talk to our team — we&apos;ll recommend the right solution for your business.</p>
           <a href="#footer" className="sp-cta-btn" onClick={scrollToFooter}>Request a Quote</a>
         </section>
 

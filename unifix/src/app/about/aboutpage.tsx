@@ -247,7 +247,7 @@ export default function AboutPage() {
           <div className="about-cta-inner">
             <h2 className="about-cta-h2">Ready to build something that lasts?</h2>
             <p className="about-cta-p">
-              Let's talk about your project. We'll recommend the right solution and handle it from end to end.
+              Let&apos;s talk about your project. We&apos;ll recommend the right solution and handle it from end to end.
             </p>
             <a href="#footer" className="about-cta-btn" onClick={scrollToFooter}>
               Request a Quote

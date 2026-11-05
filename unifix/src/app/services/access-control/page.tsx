@@ -307,7 +307,7 @@ export default function AccessControlSystemPage() {
                 Secure every entry, <em>control every access</em>
               </h2>
               <p className="sc-about-p">
-                We design and install reliable access control systems for residential, commercial, and industrial environments. From biometric door security to card-based entry and automated boom barrier gates, every solution is built for security, efficiency, and seamless integration with your property's operations.
+                We design and install reliable access control systems for residential, commercial, and industrial environments. From biometric door security to card-based entry and automated boom barrier gates, every solution is built for security, efficiency, and seamless integration with your property&apos;s operations.
               </p>
               <div className="sc-rule" />
             </div>
