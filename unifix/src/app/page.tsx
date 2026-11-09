@@ -10,6 +10,7 @@ const partners = [
   { name: "APC", logo: "/partners/Apc.png" },
   { name: "Axis", logo: "/partners/Axis.png" },
   { name: "Vertiv", logo: "/partners/Vertiv.png" },
+  { name: "Teltonika", logo: "/partners/Teltonika.png" },
   { name: "Western Digital", logo: "/partners/Western Digital.png" },
   { name: "Yeastar", logo: "/partners/Yeastar.png" },
   { name: "ZKTeco", logo: "/partners/ZKTeco.png" },
@@ -18,6 +19,7 @@ const partners = [
   { name: "Cisco", logo: "/partners/Cisco.png" },
   { name: "CommScope", logo: "/partners/CommScope.png" },
   { name: "WatchGuard", logo: "/partners/WatchGuard.png" },
+  { name: "Starlink", logo: "/partners/Starlink.png" },
   { name: "Dahua", logo: "/partners/Dahua.png" },
   { name: "TOA", logo: "/partners/Toa.png" },
   { name: "KSTAR", logo: "/partners/KSTAR.png" },
@@ -400,7 +402,7 @@ export default function HomePage() {
               <Link href="/about" className="btn-outline">Learn More</Link>
             </div>
             <div className="about-image">
-              <Image src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80" alt="Our team at work" width={800} height={600} />
+              <Image src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Our team at work" width={800} height={600} />
             </div>
           </div>
         </section>
