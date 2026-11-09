@@ -292,7 +292,8 @@ export default function HomePage() {
         .partner-logo-wrap img[alt="Grandstream"],
         .partner-logo-wrap img[alt="Sangfor"],
         .partner-logo-wrap img[alt="Seagate"],
-        .partner-logo-wrap img[alt="Panasonic"] { transform: translateY(-8px); }
+        .partner-logo-wrap img[alt="Panasonic"],
+        .partner-logo-wrap img[alt="WatchGuard"] { transform: translateY(-8px); }
         .partner-logo-wrap img[alt="TOA"] { transform: translateY(-7px); }
         .partner-logo-wrap.partner-logo-prominent { width: 200px; }
         .partner-logo-wrap.partner-logo-prominent img { max-width: 180px; max-height: 60px; }
