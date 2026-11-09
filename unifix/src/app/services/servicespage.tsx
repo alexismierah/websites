@@ -20,12 +20,10 @@ export default function ServicesPage() {
           --blue-dark: #2a6db8;
           --blue-xlt:  #f0f7ff;
           --ink:       #111827;
-          --ink-2:     #374151;
           --ink-3:     #6b7280;
           --ink-4:     #9ca3af;
           --surface:   #f9fafb;
           --border:    rgba(17,24,39,0.08);
-          --border-2:  rgba(17,24,39,0.05);
         }
 
         .sp {
@@ -66,7 +64,6 @@ export default function ServicesPage() {
           color: var(--blue);
           margin-bottom: 1.25rem;
         }
-        .sp-eyebrow-bar { width: 24px; height: 1.5px; background: var(--blue); }
         .sp-hero h1 {
           font-family: 'Instrument Sans', sans-serif;
           font-size: clamp(2.2rem, 4vw, 3.3rem);

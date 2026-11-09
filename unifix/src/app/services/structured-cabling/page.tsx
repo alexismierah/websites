@@ -66,7 +66,6 @@ export default function StructuredCablingPage() {
 
         :root {
           --blue:    #3a89dd;
-          --blue-dk: #2263a8;
           --blue-lt: #e8f3fd;
           --ink:     #0d1117;
           --ink-2:   #2d3748;

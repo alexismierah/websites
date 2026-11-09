@@ -56,7 +56,6 @@ export default function ServerCloudPage() {
 
         :root {
           --blue: #3a89dd;
-          --blue-dark: #2263a8;
           --blue-lt: #e8f3fd;
           --ink: #0d1117;
           --ink-2: #2d3748;
@@ -265,4 +264,3 @@ export default function ServerCloudPage() {
     </>
   )
 }
-

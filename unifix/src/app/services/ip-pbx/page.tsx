@@ -63,7 +63,7 @@ export default function IPPBXSystemPage() {
         @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap');
 
         :root {
-          --blue:    #3a89dd; --blue-dk: #2263a8; --blue-lt: #e8f3fd;
+          --blue:    #3a89dd; --blue-lt: #e8f3fd;
           --ink: #0d1117; --ink-2: #2d3748; --ink-3: #718096;
           --rule: rgba(13,17,23,0.08);
         }
