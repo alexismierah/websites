@@ -50,31 +50,6 @@ const partners = [
   { name: "TP-Link", logo: "/partners/TP-Link.png" },
 ]
 
-function PartnerLogo({ name, logo }: { name: string; logo: string }) {
-  const isLargeLogo = ["Grandstream", "Sangfor", "Schneider"].includes(name)
-  const isProminentLogo = ["Seagate", "Sophos"].includes(name)
-  const isCompactBrandLogo = ["Vertiv", "WatchGuard"].includes(name)
-
-  return (
-    <div className={`partner-logo-wrap${isLargeLogo ? " partner-logo-large" : ""}${isProminentLogo ? " partner-logo-prominent" : ""}${isCompactBrandLogo ? " partner-logo-compact-brand" : ""}`}>
-      <Image
-        src={logo}
-        alt={name}
-        fill
-        sizes="200px"
-        unoptimized
-        onError={(e) => {
-          const img = e.currentTarget
-          img.style.display = "none"
-          const badge = img.nextElementSibling as HTMLElement
-          if (badge) badge.style.display = "flex"
-        }}
-      />
-      <span className="partner-text-badge">{name}</span>
-    </div>
-  )
-}
-
 export default function HomePage() {
   return (
     <>
@@ -85,7 +60,6 @@ export default function HomePage() {
         :root {
           --blue:      #3a89dd;
           --blue-dark: #2a6db8;
-          --blue-lt:   #e8f2fc;
           --blue-xlt:  #f0f7ff;
           --ink:       #111827;
           --ink-2:     #374151;
@@ -99,7 +73,6 @@ export default function HomePage() {
         .root {
           --home-gutter: calc(var(--content-gutter) + 2rem);
           --font-sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-          --font-mono: var(--font-geist-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
           --font-heading: var(--font-sans);
           font-family: var(--font-sans);
           background: var(--white);
@@ -166,31 +139,6 @@ export default function HomePage() {
           box-shadow: 0 8px 24px rgba(20,91,163,0.25);
         }
         .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 12px 28px rgba(20,91,163,0.35); }
-        /* ── STATS ── */
-        .stats { background: #1e3a5f; padding: 0 var(--home-gutter); }
-        .stats-inner {
-          max-width: none; margin: 0;
-          display: grid; grid-template-columns: repeat(3, 1fr);
-        }
-        .stat-item {
-          padding: 24px 32px;
-          display: flex; align-items: center; justify-content: center; gap: 12px;
-          border-right: 1px solid rgba(255,255,255,0.1);
-          transition: background 0.2s;
-        }
-        .stat-item:last-child { border-right: none; }
-        .stat-item:hover { background: rgba(255,255,255,0.05); }
-        .stat-icon {
-          width: 36px; height: 36px; border-radius: 9px;
-          background: rgba(147,197,253,0.15);
-          display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-        }
-        .stat-icon svg { width: 18px; height: 18px; }
-        .stat-n {
-          font-family: var(--font-sans);
-          font-size: 14px; font-weight: 500; color: #fff; letter-spacing: 0;
-        }
-
         /* ── ABOUT ── */
         .about { background: var(--white); padding: 7rem var(--home-gutter); }
         .about-inner {
@@ -347,9 +295,6 @@ export default function HomePage() {
         @media (max-width: 900px) {
           .about-inner, .cta-inner { grid-template-columns: 1fr; gap: 3rem; }
           .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-          .stats-inner { grid-template-columns: 1fr; }
-          .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); justify-content: flex-start; }
-          .stat-item:last-child { border-bottom: none; }
           .services-head { flex-direction: column; align-items: flex-start; }
         }
         @media (max-width: 1100px) {
@@ -459,9 +404,33 @@ export default function HomePage() {
             </div>
             <div className="marquee-track">
               <div className="marquee-inner">
-                {[...partners, ...partners].map((p, i) => (
-                  <PartnerLogo key={i} name={p.name} logo={p.logo} />
-                ))}
+                {[...partners, ...partners].map((p, i) => {
+                  const logoClasses = [
+                    "partner-logo-wrap",
+                    ["Grandstream", "Sangfor", "Schneider"].includes(p.name) && "partner-logo-large",
+                    ["Seagate", "Sophos"].includes(p.name) && "partner-logo-prominent",
+                    ["Vertiv", "WatchGuard"].includes(p.name) && "partner-logo-compact-brand",
+                  ].filter(Boolean).join(" ")
+
+                  return (
+                    <div className={logoClasses} key={i}>
+                      <Image
+                        src={p.logo}
+                        alt={p.name}
+                        fill
+                        sizes="200px"
+                        unoptimized
+                        onError={(e) => {
+                          const img = e.currentTarget
+                          img.style.display = "none"
+                          const badge = img.nextElementSibling as HTMLElement
+                          if (badge) badge.style.display = "flex"
+                        }}
+                      />
+                      <span className="partner-text-badge">{p.name}</span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
