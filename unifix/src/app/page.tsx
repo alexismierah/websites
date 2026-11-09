@@ -5,53 +5,53 @@ import Link from "next/link"
 import { services } from "./services/services-data"
 
 const partners = [
-  { name: "Ablerex", logo: "/partners/ablerex.png" },
-  { name: "Aiphone", logo: "/partners/aiphone.png" },
-  { name: "APC", logo: "/partners/apc.png" },
-  { name: "Axis", logo: "/partners/axis.png" },
-  { name: "Belden", logo: "/partners/belden.png" },
-  { name: "Cisco", logo: "/partners/cisco.png" },
-  { name: "CommScope", logo: "/partners/commscope.png" },
-  { name: "Dahua", logo: "/partners/dahua.png" },
-  { name: "Deltapath", logo: "/partners/deltapath.png" },
-  { name: "Dintek", logo: "/partners/dintek.png" },
-  { name: "D-Link", logo: "/partners/dlink.png" },
-  { name: "Eaton", logo: "/partners/eaton.png" },
-  { name: "Fortinet", logo: "/partners/fortinet.png" },
-  { name: "Grandstream", logo: "/partners/grandstream.png" },
-  { name: "HID", logo: "/partners/hid.png" },
-  { name: "Hikvision", logo: "/partners/hikvision.png" },
-  { name: "Honeywell", logo: "/partners/honeywell.png" },
-  { name: "HPE Aruba", logo: "/partners/hpearuba.png" },
-  { name: "ITC", logo: "/partners/itc.png" },
-  { name: "KSTAR", logo: "/partners/kstar.png" },
-  { name: "LG", logo: "/partners/lg.png" },
-  { name: "NEC", logo: "/partners/nec.png" },
-  { name: "Panasonic", logo: "/partners/panasonic.png" },
-  { name: "Panduit", logo: "/partners/panduit.png" },
-  { name: "Premium Line", logo: "/partners/premuimline.png" },
-  { name: "QNAP", logo: "/partners/qnap.png" },
-  { name: "Ruijie", logo: "/partners/ruijie.png" },
-  { name: "Samsung", logo: "/partners/samsung.png" },
-  { name: "Sangfor", logo: "/partners/sangfor.png" },
-  { name: "Schneider", logo: "/partners/schneider.png" },
-  { name: "Seagate", logo: "/partners/seagate.png" },
-  { name: "Sophos", logo: "/partners/sophos.png" },
-  { name: "Synology", logo: "/partners/synology.png" },
-  { name: "TOA", logo: "/partners/toa.png" },
-  { name: "TP-Link", logo: "/partners/tplink.png" },
-  { name: "Ubiquiti", logo: "/partners/ubiquiti.png" },
-  { name: "Vertiv", logo: "/partners/vertiv.png" },
-  { name: "WatchGuard", logo: "/partners/watchguard.png" },
-  { name: "Western Digital", logo: "/partners/westerndigital.png" },
-  { name: "Yeastar", logo: "/partners/yeastar.png" },
-  { name: "ZKTeco", logo: "/partners/zkteco.png" },
+  { name: "Ablerex", logo: "/partners/Ablerex.png" },
+  { name: "Aiphone", logo: "/partners/Aiphone.png" },
+  { name: "APC", logo: "/partners/Apc.png" },
+  { name: "Axis", logo: "/partners/Axis.png" },
+  { name: "Vertiv", logo: "/partners/Vertiv.png" },
+  { name: "Western Digital", logo: "/partners/Western Digital.png" },
+  { name: "Yeastar", logo: "/partners/Yeastar.png" },
+  { name: "ZKTeco", logo: "/partners/ZKTeco.png" },
+  { name: "Belden", logo: "/partners/Belden.png" },
+  { name: "Synology", logo: "/partners/Synology.png" },
+  { name: "Cisco", logo: "/partners/Cisco.png" },
+  { name: "CommScope", logo: "/partners/CommScope.png" },
+  { name: "WatchGuard", logo: "/partners/WatchGuard.png" },
+  { name: "Dahua", logo: "/partners/Dahua.png" },
+  { name: "TOA", logo: "/partners/Toa.png" },
+  { name: "KSTAR", logo: "/partners/KSTAR.png" },
+  { name: "Deltapath", logo: "/partners/Deltapath.png" },
+  { name: "Dintek", logo: "/partners/Dintek.png" },
+  { name: "D-Link", logo: "/partners/D-link.png" },
+  { name: "Eaton", logo: "/partners/Eaton.png" },
+  { name: "LG", logo: "/partners/LG.png" },
+  { name: "Fortinet", logo: "/partners/Fortinet.png" },
+  { name: "Grandstream", logo: "/partners/Grandstream.png" },
+  { name: "HID", logo: "/partners/HID.png" },
+  { name: "Hikvision", logo: "/partners/Hikvision.png" },
+  { name: "Honeywell", logo: "/partners/Honeywell.png" },
+  { name: "Ubiquiti", logo: "/partners/Ubiquiti.png" },
+  { name: "HPE Aruba", logo: "/partners/HPE Aruba.png" },
+  { name: "ITC", logo: "/partners/ITC.png" },
+  { name: "NEC", logo: "/partners/NEC.png" },
+  { name: "Panasonic", logo: "/partners/Panasonic.png" },
+  { name: "Panduit", logo: "/partners/Panduit.png" },
+  { name: "Premium Line", logo: "/partners/Premiumline.png" },
+  { name: "QNAP", logo: "/partners/Qnap.png" },
+  { name: "Ruijie", logo: "/partners/Ruijie.png" },
+  { name: "Samsung", logo: "/partners/Samsung.png" },
+  { name: "Sangfor", logo: "/partners/Sangfor.png" },
+  { name: "Schneider", logo: "/partners/Schneider.png" },
+  { name: "Seagate", logo: "/partners/Seagate.png" },
+  { name: "Sophos", logo: "/partners/Sophos.png" },
+  { name: "TP-Link", logo: "/partners/TP-Link.png" },
 ]
 
 function PartnerLogo({ name, logo }: { name: string; logo: string }) {
   const isLargeLogo = ["Grandstream", "Sangfor", "Schneider"].includes(name)
   const isProminentLogo = ["Seagate", "Sophos"].includes(name)
-  const isCompactBrandLogo = ["Ubiquiti", "Vertiv", "WatchGuard"].includes(name)
+  const isCompactBrandLogo = ["Vertiv", "WatchGuard"].includes(name)
 
   return (
     <div className={`partner-logo-wrap${isLargeLogo ? " partner-logo-large" : ""}${isProminentLogo ? " partner-logo-prominent" : ""}${isCompactBrandLogo ? " partner-logo-compact-brand" : ""}`}>
@@ -289,6 +289,11 @@ export default function HomePage() {
         .partner-logo-wrap img[alt="Panasonic"] { max-width: 144px; max-height: 53px; }
         .partner-logo-wrap.partner-logo-large { width: 180px; }
         .partner-logo-wrap.partner-logo-large img { max-width: 150px; max-height: 56px; }
+        .partner-logo-wrap img[alt="Grandstream"],
+        .partner-logo-wrap img[alt="Sangfor"],
+        .partner-logo-wrap img[alt="Seagate"],
+        .partner-logo-wrap img[alt="Panasonic"] { transform: translateY(-8px); }
+        .partner-logo-wrap img[alt="TOA"] { transform: translateY(-7px); }
         .partner-logo-wrap.partner-logo-prominent { width: 200px; }
         .partner-logo-wrap.partner-logo-prominent img { max-width: 180px; max-height: 60px; }
         .partner-logo-wrap.partner-logo-prominent img[alt="Sophos"] { max-width: 150px; max-height: 50px; }

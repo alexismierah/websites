@@ -28,6 +28,7 @@ const serviceLinks: Service[] = [
 export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
   const [scrolled, setScrolled] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -52,6 +53,7 @@ export default function Header() {
       if (e.key === "Escape") {
         setServicesOpen(false)
         setMobileOpen(false)
+        setMobileServicesOpen(false)
       }
     }
     document.addEventListener("mousedown", onDown)
@@ -72,6 +74,7 @@ export default function Header() {
   const goToQuote = (e: React.MouseEvent) => {
     e.preventDefault()
     setMobileOpen(false)
+    setMobileServicesOpen(false)
     const el = document.getElementById("footer")
     if (el) el.scrollIntoView({ behavior: "smooth" })
   }
@@ -411,6 +414,38 @@ export default function Header() {
         }
         .hdr-mobile-link:hover { background: #f3f7fc; color: var(--blue-dark); }
 
+        .hdr-mobile-services-btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          background: none;
+          border: 0;
+          cursor: pointer;
+          text-align: left;
+          font-family: var(--font-display);
+          font-size: 1.02rem;
+          font-weight: 500;
+          letter-spacing: -0.005em;
+          color: var(--ink);
+          padding: 11px 12px;
+          border-radius: 9px;
+          transition: background 0.13s, color 0.13s;
+        }
+        .hdr-mobile-services-btn:hover { background: #f3f7fc; color: var(--blue-dark); }
+        .hdr-mobile-services-btn svg { transition: transform 0.2s ease; }
+        .hdr-mobile-services-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+        .hdr-mobile-services-list { display: flex; flex-direction: column; gap: 2px; }
+        .hdr-mobile-viewall {
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--blue-dark);
+          text-decoration: none;
+          padding: 11px 12px;
+          border-top: 1px solid var(--border);
+          margin-top: 6px;
+        }
+
         .hdr-mobile-section {
           font-family: var(--font-display);
           font-size: 0.82rem;
@@ -559,7 +594,10 @@ export default function Header() {
             </a>
             <button
               className="hdr-mobile-btn"
-              onClick={() => setMobileOpen(v => !v)}
+              onClick={() => {
+                setMobileOpen(v => !v)
+                setMobileServicesOpen(false)
+              }}
               aria-label="Toggle menu"
               aria-expanded={mobileOpen}
               aria-controls="mobile-navigation"
@@ -578,19 +616,60 @@ export default function Header() {
         </div>
 
         <div id="mobile-navigation" className={`hdr-mobile${mobileOpen ? " open" : ""}`}>
-          <Link href="/" className="hdr-mobile-link" onClick={() => setMobileOpen(false)}>Home</Link>
-          <Link href="/about" className="hdr-mobile-link" onClick={() => setMobileOpen(false)}>About us</Link>
+          <Link href="/" className="hdr-mobile-link" onClick={() => {
+            setMobileOpen(false)
+            setMobileServicesOpen(false)
+          }}>Home</Link>
+          <Link href="/about" className="hdr-mobile-link" onClick={() => {
+            setMobileOpen(false)
+            setMobileServicesOpen(false)
+          }}>About us</Link>
 
-          {categories.map(cat => (
-            <div key={cat} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-              <div className="hdr-mobile-section">{cat}</div>
-              {serviceLinks.filter(s => s.category === cat).map(({ href, label }) => (
-                <Link key={href} href={href} className="hdr-mobile-sublink" onClick={() => setMobileOpen(false)}>
-                  {label}
+          <div className="hdr-mobile-services">
+            <button
+              className="hdr-mobile-services-btn"
+              onClick={() => setMobileServicesOpen(open => !open)}
+              aria-expanded={mobileServicesOpen}
+              aria-controls="mobile-services-list"
+            >
+              Services
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="m3.5 6 4.5 4 4.5-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            {mobileServicesOpen && (
+              <div id="mobile-services-list" className="hdr-mobile-services-list">
+                {categories.map(cat => (
+                  <div key={cat} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                    <div className="hdr-mobile-section">{cat}</div>
+                    {serviceLinks.filter(s => s.category === cat).map(({ href, label }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        className="hdr-mobile-sublink"
+                        onClick={() => {
+                          setMobileOpen(false)
+                          setMobileServicesOpen(false)
+                        }}
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+                <Link
+                  href="/services"
+                  className="hdr-mobile-viewall"
+                  onClick={() => {
+                    setMobileOpen(false)
+                    setMobileServicesOpen(false)
+                  }}
+                >
+                  View all services
                 </Link>
-              ))}
-            </div>
-          ))}
+              </div>
+            )}
+          </div>
 
           <a className="hdr-mobile-cta" onClick={goToQuote} href="#footer">
             Request a quote
