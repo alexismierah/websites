@@ -344,7 +344,7 @@ export default function HomePage() {
               <h2>Unifix ICT <em>Solutions</em></h2>
               <p>Unifix ICT Solutions by Rich Haven Enterprises (RHE) is a reliable company engaged in the supply of products and services for telecommunications industry since October 2014.</p>
               <p>The company&apos;s primary objective is to provide services that satisfy customer requirements. We ensure that we satisfy even the most specific expectations our clients have by providing comprehensive telecommunications and ICT solutions.</p>
-              <Link href="/about" className="btn-outline">Learn More</Link>
+              <Link href="/about" className="btn-outline">Read Our Story</Link>
             </div>
             <div className="about-image">
               <Image src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Our team at work" width={800} height={600} />
@@ -360,7 +360,7 @@ export default function HomePage() {
                 <div className="eyebrow">Our Services</div>
                 <h2>What we <em>do best</em></h2>
               </div>
-              <Link href="/services" className="btn-outline">View Services</Link>
+              <Link href="/services" className="btn-outline">View All Services</Link>
             </div>
             <div className="services-grid">
               {services.slice(0, 3).map((s, index) => (
