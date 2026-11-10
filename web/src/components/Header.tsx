@@ -161,7 +161,7 @@ export default function Header() {
           padding: 8px 14px;
           border-radius: 8px;
           font-family: var(--font-display);
-          font-size: 0.9rem;
+          font-size: 0.840rem;
           font-weight: 500;
           letter-spacing: 0;
           color: var(--ink-2);
