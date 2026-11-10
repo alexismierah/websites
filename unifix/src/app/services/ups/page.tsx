@@ -1,3 +1,6 @@
+import Image from "next/image"
+import upsBackground from "./UPS.png"
+
 export const metadata = {
   title: "UPS | Unifix ICT Solutions",
 }
@@ -75,12 +78,11 @@ export default function UPSPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://cdn.thewirecutter.com/wp-content/media/2025/09/BEST-UNINTERRUPTIBLE-POWER-SUPPLY-UPS-01296-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp');
-          background-size: cover;
-          background-position: center;
+        }
+
+        .sc-hero-bg img {
+          object-fit: cover;
           opacity: 0.35;
-          width: 100%;
-          height: 100%;
         }
 
         .sc-hero-inner {
@@ -254,7 +256,9 @@ export default function UPSPage() {
 
         {/* ── Hero ── */}
         <section className="sc-hero">
-          <div className="sc-hero-bg" />
+          <div className="sc-hero-bg">
+            <Image src={upsBackground} alt="" fill sizes="100vw" />
+          </div>
           <div className="sc-hero-grid" />
           <div className="sc-hero-inner">
 

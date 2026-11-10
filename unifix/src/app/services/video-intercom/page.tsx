@@ -1,3 +1,5 @@
+import videoIntercomImage from "./video-intercom.png"
+
 export const metadata = {
   title: "Video Intercom | Unifix ICT Solutions",
 }
@@ -87,7 +89,6 @@ export default function NetworkSecurityPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://images.ctfassets.net/5kq8dse7hipf/4XT22KM3SK6kZJxVB9swsU/2d0c5908226ad37ff784282b667e3d28/intercom-system-cost.jpg');
           background-size: cover;
           background-position: center;
           opacity: 0.35;
@@ -266,7 +267,7 @@ export default function NetworkSecurityPage() {
 
         {/* ── Hero ── */}
         <section className="sc-hero">
-          <div className="sc-hero-bg" />
+          <div className="sc-hero-bg" style={{ backgroundImage: `url("${videoIntercomImage.src}")` }} />
           <div className="sc-hero-grid" />
           <div className="sc-hero-inner">
 

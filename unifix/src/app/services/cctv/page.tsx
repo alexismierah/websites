@@ -1,3 +1,5 @@
+import cctvImage from "./CCTV.jpg"
+
 export const metadata = {
   title: "CCTV Surveillance System | Unifix ICT Solutions",
 }
@@ -89,7 +91,6 @@ export default function CCTVSurveillanceSystemPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://www.securitastechnology.com/sites/securitastechnology.com/files/media/2022-01/Modern%20CCTV%20camera%20on%20a%20wall.jpg');
           background-size: cover;
           background-position: center;
           opacity: 0.35;
@@ -268,7 +269,7 @@ export default function CCTVSurveillanceSystemPage() {
 
         {/* ── Hero ── */}
         <section className="sc-hero">
-          <div className="sc-hero-bg" />
+          <div className="sc-hero-bg" style={{ backgroundImage: `url("${cctvImage.src}")` }} />
           <div className="sc-hero-grid" />
           <div className="sc-hero-inner">
 

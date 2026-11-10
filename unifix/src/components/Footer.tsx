@@ -10,11 +10,11 @@ export default function Footer() {
   const [errors, setErrors] = useState<{ name?: string; email?: string; phone?: string; message?: string }>({})
 
   const isValidEmail = (email: string): boolean => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-  const isValidPhone = (phone: string): boolean => /^[0-9+\-\s()]+$/.test(phone) || phone === ""
+  const isValidPhone = (phone: string): boolean => /^\d{1,11}$/.test(phone) || phone === ""
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
-    const filtered = name === "phone" ? value.replace(/[^0-9+\-\s()]/g, "") : value
+    const filtered = name === "phone" ? value.replace(/\D/g, "").slice(0, 11) : value
     setFormData(prev => ({ ...prev, [name]: filtered }))
     setErrors(prev => ({ ...prev, [name]: undefined }))
   }
@@ -377,6 +377,8 @@ export default function Footer() {
                     onBlur={() => setFocused(null)}
                     placeholder={placeholder}
                     required={required}
+                    inputMode={key === "phone" ? "numeric" : undefined}
+                    maxLength={key === "phone" ? 11 : undefined}
                     className={`field-input ${errors[key] ? "has-error" : ""}`}
                   />
                   {errors[key] && <div className="field-error">{errors[key]}</div>}

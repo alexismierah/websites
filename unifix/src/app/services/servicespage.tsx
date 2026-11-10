@@ -41,8 +41,7 @@ export default function ServicesPage() {
         .sp-hero {
           position: relative;
           overflow: hidden;
-          background: var(--surface);
-          border-bottom: 1px solid var(--border);
+          background: #fff;
           padding: 5.5rem 4rem 4.5rem;
         }
         .sp-hero-inner {
@@ -66,14 +65,17 @@ export default function ServicesPage() {
         }
         .sp-hero h1 {
           font-family: 'Instrument Sans', sans-serif;
-          font-size: clamp(2.2rem, 4vw, 3.3rem);
+          font-size: clamp(2.8rem, 5vw, 4.2rem);
           font-weight: 400;
           line-height: 1.1;
           letter-spacing: -0.02em;
           color: var(--ink);
           margin-bottom: 0.875rem;
         }
-        .sp-hero h1 em { font-style: italic; color: var(--blue); }
+        .sp-hero h1 em {
+          font-style: italic;
+          color: var(--blue);
+        }
         .sp-hero-sub {
           font-size: 1rem;
           color: var(--ink-3);
@@ -104,7 +106,7 @@ export default function ServicesPage() {
           flex-direction: column;
           gap: 1.5rem;
           padding: 2.5rem 2.5rem;
-          background: #f1f5f9;
+          background: #fff;
         }
 
         .sp-row {
@@ -324,7 +326,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="sp-row-img">
-                  <img src={svc.img} alt={svc.name} />
+                  <img src={typeof svc.img === "string" ? svc.img : svc.img.src} alt={svc.name} />
                   <div className="sp-row-img-shade" />
                 </div>
               </Link>

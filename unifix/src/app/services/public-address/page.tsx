@@ -1,3 +1,5 @@
+import publicAddressImage from "./public-address.png"
+
 export const metadata = {
   title: "Public Address System | Unifix ICT Solutions",
 }
@@ -65,7 +67,6 @@ export default function PublicAddressSystemPage() {
 
         .sc-hero-bg {
           position: absolute; inset: 0;
-          background-image: url('https://www.masstrans.in/wp-content/uploads/Passenger-Announcement-System-airport.jpeg');
           background-size: cover; background-position: center;
           opacity: 0.35; width: 100%; height: 100%;
         }
@@ -158,7 +159,7 @@ export default function PublicAddressSystemPage() {
 
       <div className="sc-root">
         <section className="sc-hero">
-          <div className="sc-hero-bg" />
+          <div className="sc-hero-bg" style={{ backgroundImage: `url("${publicAddressImage.src}")` }} />
           <div className="sc-hero-inner">
             <div className="sc-hero-icon-wrap">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" opacity="0">

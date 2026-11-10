@@ -1,3 +1,6 @@
+import Image from "next/image"
+import serverCloudImage from "./server-cloud.png"
+
 export const metadata = {
   title: "Server & Cloud | Unifix ICT Solutions",
 }
@@ -79,9 +82,10 @@ export default function ServerCloudPage() {
         .sc-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80');
-          background-size: cover;
-          background-position: center;
+        }
+
+        .sc-hero-bg img {
+          object-fit: cover;
           opacity: 0.35;
         }
 
@@ -229,7 +233,9 @@ export default function ServerCloudPage() {
 
       <div className="sc-root">
         <section className="sc-hero">
-          <div className="sc-hero-bg" />
+          <div className="sc-hero-bg">
+            <Image src={serverCloudImage} alt="" fill sizes="100vw" />
+          </div>
           <div className="sc-hero-inner">
             <h1 className="sc-hero-h1">Server &amp; Cloud</h1>
             <p className="sc-hero-p">High-performing, secure infrastructure designed to keep your business agile, resilient, and ready for growth.</p>

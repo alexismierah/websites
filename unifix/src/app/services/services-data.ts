@@ -1,3 +1,9 @@
+import upsImage from "./ups/UPS.png"
+import serverCloudImage from "./server-cloud/server-cloud.png"
+import videoIntercomImage from "./video-intercom/video-intercom.png"
+import publicAddressImage from "./public-address/public-address.png"
+import cctvImage from "./cctv/CCTV.jpg"
+
 export const services = [
   {
     name: "Structured Network Cabling",
@@ -18,7 +24,7 @@ export const services = [
     desc: "Our solutions include IP camera networks for continuous site monitoring, remote security management, and intelligent video analytics.",
     tag: "Security",
     href: "/services/cctv",
-    img: "https://www.securitastechnology.com/sites/securitastechnology.com/files/media/2022-01/Modern%20CCTV%20camera%20on%20a%20wall.jpg",
+    img: cctvImage,
   },
   {
     name: "IP PABX Telephone System",
@@ -32,14 +38,14 @@ export const services = [
     desc: "Flexible server infrastructure and cloud solutions built to support business continuity, scalability, security, and streamlined digital operations.",
     tag: "Infrastructure",
     href: "/services/server-cloud",
-    img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    img: serverCloudImage,
   },
   {
     name: "Uninterruptible Power Supply",
     desc: "Reliable uninterruptible power supply solutions that protect critical equipment and ensure business continuity during outages.",
     tag: "Energy",
     href: "/services/ups",
-    img: "https://cdn.thewirecutter.com/wp-content/media/2025/09/BEST-UNINTERRUPTIBLE-POWER-SUPPLY-UPS-01296-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp",
+    img: upsImage,
   },
   {
     name: "Access Control System",
@@ -53,14 +59,14 @@ export const services = [
     desc: "Integrated video intercom systems for residential and commercial buildings with remote door access and mobile app connectivity.",
     tag: "Security",
     href: "/services/video-intercom",
-    img: "https://images.ctfassets.net/5kq8dse7hipf/4XT22KM3SK6kZJxVB9swsU/2d0c5908226ad37ff784282b667e3d28/intercom-system-cost.jpg",
+    img: videoIntercomImage,
   },
   {
     name: "Public Address System",
     desc: "Clear and reliable audio systems for announcements, emergency broadcasts, and background audio across large facilities and multi-zone environments.",
     tag: "Communications",
     href: "/services/public-address",
-    img: "https://www.masstrans.in/wp-content/uploads/Passenger-Announcement-System-airport.jpeg",
+    img: publicAddressImage,
   },
   {
     name: "Conference System",
