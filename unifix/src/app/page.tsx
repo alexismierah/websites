@@ -104,7 +104,7 @@ export default function HomePage() {
         }
         .hero h1 {
           font-family: var(--font-heading);
-          font-size: clamp(2.35rem, 4.2vw, 3.6rem);
+          font-size: clamp(2.8rem, 5vw, 4.2rem);
           font-weight: 400;
           line-height: 1.08;
           color: #fff;
@@ -303,7 +303,7 @@ export default function HomePage() {
         @media (max-width: 600px) {
           .hero-overlay { background: linear-gradient(90deg, rgba(9,19,33,0.88), rgba(9,19,33,0.54)); }
           .root .hero-content { padding: 6rem var(--home-gutter) 4rem; }
-          .hero h1 { font-size: clamp(1.35rem, 6.2vw, 2.35rem); }
+          .hero h1 { font-size: clamp(1.5rem, 8vw, 2.8rem); }
           .hero-sub { font-size: 0.94rem; }
           .hero-actions { gap: 1.25rem; transform: translateY(1rem); }
           .about, .services, .partners, .cta { padding-inline: var(--home-gutter); }
