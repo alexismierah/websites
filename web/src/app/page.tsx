@@ -399,7 +399,7 @@ export default function HomePage() {
         <section className="partners">
           <div className="partners-inner">
             <div className="partners-head">
-              <div className="eyebrow">Brand Partners</div>
+              <div className="eyebrow">Solutions Partners</div>
               <h2>Trusted brands we work with</h2>
             </div>
             <div className="marquee-track">
@@ -418,8 +418,7 @@ export default function HomePage() {
                         src={p.logo}
                         alt={p.name}
                         fill
-                        sizes="200px"
-                        unoptimized
+                        sizes="180px"
                         onError={(e) => {
                           const img = e.currentTarget
                           img.style.display = "none"
